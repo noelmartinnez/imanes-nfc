@@ -183,11 +183,21 @@ export class MotorGlobo {
   }
 
   arrastrar(dx: number, dy: number) {
+    this.girar(dx, dy);
+    this.pedir();
+  }
+
+  /** Solo cambia la rotación: dentro del bucle no hay que pedir otro fotograma. */
+  private girar(dx: number, dy: number) {
     // Un píxel en el centro de la bola equivale a estos grados: el punto sigue al dedo.
     const grados = 180 / (Math.PI * this.radioBase * this.escala);
     const [lambda, phi] = this.rotacion;
     this.rotacion = [lambda + dx * grados, limitar(phi - dy * grados, -INCLINACION_MAX, INCLINACION_MAX), 0];
-    this.pedir();
+  }
+
+  /** Hay algo moviendo el globo solo (vuelo o inercia), aparte del giro lento. */
+  get enMovimiento() {
+    return this.vuelo !== null || this.inercia !== null;
   }
 
   /** Suelta con velocidad (px/ms): sigue girando y frena poco a poco. */
@@ -253,8 +263,10 @@ export class MotorGlobo {
   paisEn(x: number, y: number): PaisGeo | null {
     const lonlat = this.proyeccion.invert?.([x, y]);
     if (!lonlat || Number.isNaN(lonlat[0])) return null;
-    const visitados = this.paises.filter((p) => this.tintas.has(p.id as string));
-    return [...visitados, ...this.paises].find((p) => geoContains(p, lonlat)) ?? null;
+    // Solo los países cuyo círculo contiene el punto: geoContains es lo caro.
+    const cerca = this.paises.filter((_, i) => geoDistance(this.alcance[i].centro, lonlat) <= this.alcance[i].radio + 1e-6);
+    const visitados = cerca.filter((p) => this.tintas.has(p.id as string));
+    return [...visitados, ...cerca].find((p) => geoContains(p, lonlat)) ?? null;
   }
 
   esVisitado(iso3: string | null) {
@@ -282,7 +294,7 @@ export class MotorGlobo {
 
   private fotograma = (ahora: number) => {
     this.raf = 0;
-    const dt = Math.min(ahora - this.ultimo, 64);
+    const dt = limitar(ahora - this.ultimo, 0, 64);
     this.ultimo = ahora;
     let sigue = false;
 
@@ -303,7 +315,7 @@ export class MotorGlobo {
       }
     } else if (this.inercia) {
       const { vx, vy } = this.inercia;
-      this.arrastrar(vx * dt, vy * dt);
+      this.girar(vx * dt, vy * dt);
       const frena = ROZAMIENTO ** (dt / 16.7);
       this.inercia = { vx: vx * frena, vy: vy * frena };
       if (Math.hypot(vx, vy) > 0.01) sigue = true;
@@ -327,7 +339,8 @@ export class MotorGlobo {
 
     if (this.sucio || sigue) this.dibujar();
     this.sucio = false;
-    if (sigue && !document.hidden) this.raf = requestAnimationFrame(this.fotograma);
+    // Si algo ya pidió el siguiente fotograma durante este, no se pide otro: nunca más de uno.
+    if (sigue && !this.raf && !document.hidden) this.raf = requestAnimationFrame(this.fotograma);
   };
 
   /**

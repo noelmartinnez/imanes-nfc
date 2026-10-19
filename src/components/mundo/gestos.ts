@@ -20,8 +20,11 @@ export function conectarGestos(
   let velocidad = { vx: 0, vy: 0 };
   let ultimo = 0;
   let pinza: { distancia: number; escala: number; medio: Puntero } | null = null;
+  // El hover del ratón se resuelve como mucho una vez por fotograma, no en cada evento.
+  let hoverPendiente: { clientX: number; clientY: number } | null = null;
+  let hoverRaf = 0;
 
-  const local = (e: PointerEvent | WheelEvent): Puntero => {
+  const local = (e: { clientX: number; clientY: number }): Puntero => {
     const r = lienzo.getBoundingClientRect();
     return { x: e.clientX - r.left, y: e.clientY - r.top };
   };
@@ -31,6 +34,22 @@ export function conectarGestos(
   const empezarPinza = () => {
     const [a, b] = [...punteros.values()];
     pinza = { distancia: distancia(a, b), escala: motor.escala, medio: medio(a, b) };
+  };
+
+  /** Resalta el país con fotos bajo el cursor (no durante un vuelo o la inercia: cambiaría al momento). */
+  const resolverHover = () => {
+    hoverRaf = 0;
+    const evento = hoverPendiente;
+    hoverPendiente = null;
+    if (!evento || motor.enMovimiento) return;
+    const { x, y } = local(evento);
+    const pais = motor.paisEn(x, y);
+    const iso3 = motor.esVisitado((pais?.id as string) ?? null) ? (pais!.id as string) : null;
+    if (iso3 !== motor.hover) {
+      motor.hover = iso3;
+      motor.redibujar();
+    }
+    lienzo.style.cursor = iso3 ? "pointer" : "grab";
   };
 
   const alBajar = (e: PointerEvent) => {
@@ -58,14 +77,8 @@ export function conectarGestos(
     if (!anterior) {
       // Ratón sin pulsar: resaltar el país con fotos bajo el cursor.
       if (e.pointerType === "mouse") {
-        const { x, y } = local(e);
-        const pais = motor.paisEn(x, y);
-        const iso3 = motor.esVisitado((pais?.id as string) ?? null) ? (pais!.id as string) : null;
-        if (iso3 !== motor.hover) {
-          motor.hover = iso3;
-          motor.redibujar();
-        }
-        lienzo.style.cursor = iso3 ? "pointer" : "grab";
+        hoverPendiente = { clientX: e.clientX, clientY: e.clientY };
+        if (!hoverRaf) hoverRaf = requestAnimationFrame(resolverHover);
       }
       return;
     }
@@ -139,6 +152,7 @@ export function conectarGestos(
 
   const alCancelar = (e: PointerEvent) => alSoltar(e, true);
   const alSalir = () => {
+    hoverPendiente = null;
     if (motor.hover) {
       motor.hover = null;
       motor.redibujar();
@@ -153,6 +167,7 @@ export function conectarGestos(
   lienzo.addEventListener("wheel", alRueda, { passive: false });
   lienzo.addEventListener("keydown", alTeclear);
   return () => {
+    cancelAnimationFrame(hoverRaf);
     lienzo.removeEventListener("pointerdown", alBajar);
     lienzo.removeEventListener("pointermove", alMover);
     lienzo.removeEventListener("pointerup", alSoltar);
