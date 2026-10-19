@@ -1,0 +1,530 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T15:11:32.968Z",
+  "title": "Design System: Imanes",
+  "extensions": {
+    "colorMeta": {
+      "papel": {
+        "role": "neutral",
+        "displayName": "Papel de Visado",
+        "canonical": "oklch(94.6% 0.008 157.1)",
+        "tonalRamp": [
+          "#080c0a",
+          "#212522",
+          "#3c413e",
+          "#5a5f5c",
+          "#7c827e",
+          "#9da39f",
+          "#c3c9c5",
+          "#eaf0ec"
+        ]
+      },
+      "papel-hondo": {
+        "role": "neutral",
+        "displayName": "Papel Hondo",
+        "canonical": "oklch(91.7% 0.012 162.0)",
+        "tonalRamp": [
+          "#070d0a",
+          "#1f2622",
+          "#3a423e",
+          "#58605c",
+          "#7a827e",
+          "#9ba49f",
+          "#c1cac5",
+          "#e8f1ec"
+        ]
+      },
+      "regla": {
+        "role": "neutral",
+        "displayName": "Regla",
+        "canonical": "oklch(80.6% 0.020 167.8)",
+        "tonalRamp": [
+          "#040e09",
+          "#1b2722",
+          "#36433e",
+          "#53615b",
+          "#75847e",
+          "#96a69f",
+          "#bcccc5",
+          "#e2f3ec"
+        ]
+      },
+      "perforado": {
+        "role": "neutral",
+        "displayName": "Perforado",
+        "canonical": "oklch(63.8% 0.026 173.3)",
+        "tonalRamp": [
+          "#010f0a",
+          "#162823",
+          "#31443e",
+          "#4f635c",
+          "#71867f",
+          "#92a7a0",
+          "#b7cdc6",
+          "#def5ed"
+        ]
+      },
+      "guilloche": {
+        "role": "secondary",
+        "displayName": "Guilloché Verde Azulado",
+        "canonical": "oklch(59.7% 0.064 187.5)",
+        "tonalRamp": [
+          "#000f0d",
+          "#002b28",
+          "#004a46",
+          "#2b6964",
+          "#508d87",
+          "#71afa8",
+          "#97d5cf",
+          "#bdfdf6"
+        ]
+      },
+      "texto": {
+        "role": "neutral",
+        "displayName": "Tinta de Texto",
+        "canonical": "oklch(26.9% 0.023 235.8)",
+        "tonalRamp": [
+          "#030d14",
+          "#19262e",
+          "#34424b",
+          "#516069",
+          "#73838c",
+          "#94a4ae",
+          "#bacad5",
+          "#e0f1fc"
+        ]
+      },
+      "texto-suave": {
+        "role": "neutral",
+        "displayName": "Texto Suave",
+        "canonical": "oklch(45.9% 0.024 224.8)",
+        "tonalRamp": [
+          "#020d13",
+          "#17272d",
+          "#324349",
+          "#506168",
+          "#72848b",
+          "#92a5ad",
+          "#b8cbd3",
+          "#def2fb"
+        ]
+      },
+      "carmin": {
+        "role": "primary",
+        "displayName": "Tinta Carmín",
+        "canonical": "oklch(50.4% 0.169 17.9)",
+        "tonalRamp": [
+          "#1e0103",
+          "#490210",
+          "#7a0421",
+          "#a82138",
+          "#d24b59",
+          "#f96f79",
+          "#fdafb1",
+          "#fee8e8"
+        ]
+      },
+      "violeta": {
+        "role": "primary",
+        "displayName": "Tinta Violeta",
+        "canonical": "oklch(44.1% 0.143 294.5)",
+        "tonalRamp": [
+          "#0f0029",
+          "#2d0060",
+          "#472881",
+          "#6548a4",
+          "#876ccc",
+          "#a88ef1",
+          "#cbbcfc",
+          "#efebff"
+        ]
+      },
+      "cobalto": {
+        "role": "primary",
+        "displayName": "Tinta Cobalto",
+        "canonical": "oklch(43.2% 0.154 264.2)",
+        "tonalRamp": [
+          "#000035",
+          "#00116c",
+          "#13358f",
+          "#3057b3",
+          "#507bdb",
+          "#739efc",
+          "#acc7fe",
+          "#e7efff"
+        ]
+      },
+      "verde": {
+        "role": "primary",
+        "displayName": "Tinta Verde",
+        "canonical": "oklch(50.9% 0.095 158.4)",
+        "tonalRamp": [
+          "#000f06",
+          "#012c19",
+          "#014d2e",
+          "#226d49",
+          "#49916b",
+          "#6bb48b",
+          "#91dab0",
+          "#c3ffdb"
+        ]
+      },
+      "tapa": {
+        "role": "neutral",
+        "displayName": "Tapa",
+        "canonical": "oklch(21.1% 0.033 352.1)",
+        "tonalRamp": [
+          "#15060d",
+          "#301d26",
+          "#4e3941",
+          "#6d565f",
+          "#917982",
+          "#b39aa3",
+          "#d9bfc9",
+          "#ffe7f0"
+        ]
+      },
+      "tapa-hondo": {
+        "role": "neutral",
+        "displayName": "Tapa Honda",
+        "canonical": "oklch(16.9% 0.023 353.2)",
+        "tonalRamp": [
+          "#13070c",
+          "#2d2025",
+          "#4a3b41",
+          "#69595f",
+          "#8c7b81",
+          "#ae9ca3",
+          "#d4c2c8",
+          "#fce9f0"
+        ]
+      },
+      "tapa-texto": {
+        "role": "neutral",
+        "displayName": "Texto de Tapa",
+        "canonical": "oklch(93.2% 0.012 37.4)",
+        "tonalRamp": [
+          "#100908",
+          "#292220",
+          "#463e3b",
+          "#645b59",
+          "#877e7b",
+          "#a89f9c",
+          "#cfc5c2",
+          "#f6ece9"
+        ]
+      },
+      "tapa-suave": {
+        "role": "neutral",
+        "displayName": "Tapa Suave",
+        "canonical": "oklch(73.9% 0.023 14.2)",
+        "tonalRamp": [
+          "#140708",
+          "#2e1f20",
+          "#4b3b3c",
+          "#6a5859",
+          "#8e7b7c",
+          "#b09c9d",
+          "#d6c2c3",
+          "#fee9ea"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Nombre del lugar o del país, una vez por página."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Titular de la 404."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Nombres de lugar en las filas del índice."
+      },
+      "title-sm": {
+        "displayName": "Title pequeño",
+        "purpose": "Marca, enlace de volver y botón primario."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Textos de estado, máximo 34ch."
+      },
+      "body-strong": {
+        "displayName": "Body fuerte",
+        "purpose": "Valores de campo (País, Fecha)."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Etiquetas de campo del bloque de datos, en mayúsculas."
+      },
+      "data": {
+        "displayName": "Data",
+        "purpose": "Fechas, recuentos y contador del visor."
+      },
+      "mrz": {
+        "displayName": "MRZ",
+        "purpose": "Zona de lectura mecánica al pie de la página de lugar."
+      },
+      "label-caps": {
+        "displayName": "Label en versalitas condensadas",
+        "purpose": "Paso de 15px: chips de país, encabezados de país del índice, etiqueta de chincheta (variante extracondensada 800) y aviso «sin fotos»."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Estampado, revelado, presión y apertura del visor."
+      },
+      {
+        "name": "ease-drawer",
+        "value": "cubic-bezier(0.32, 0.72, 0, 1)",
+        "purpose": "Retorno de la foto y del fondo cuando el arrastre de cierre no llega al umbral (320ms)."
+      },
+      {
+        "name": "estampar",
+        "value": "260ms ease-out, 220ms de espera; scale 1.12 a 1, opacity 0 a 1 (al 55%), blur 1.5px a 0",
+        "purpose": "El sello se estampa una vez al llegar a una página de lugar."
+      },
+      {
+        "name": "revelado",
+        "value": "filter blur(12px) saturate(0.6) a none, 520ms ease-out",
+        "purpose": "Cada foto pasa de borrosa a nítida al cargar, una vez."
+      },
+      {
+        "name": "pulsar",
+        "value": "scale 0.97 en :active, 140ms ease-out",
+        "purpose": "Presión en fotos, enlaces y controles."
+      },
+      {
+        "name": "visor",
+        "value": "opacity 0 a 1, 220ms ease-out (@starting-style); salida 180ms",
+        "purpose": "Apertura y cierre del visor."
+      },
+      {
+        "name": "reducido",
+        "value": "prefers-reduced-motion: sello solo opacidad 200ms; sin revelado; sin escala al pulsar; scroll del visor sin suavizado",
+        "purpose": "Alternativa de movimiento reducido."
+      },
+      {
+        "name": "vuelo",
+        "value": "curva de entrada y salida cuártica (t<0.5 ? 8t⁴ : 1-(-2t+2)⁴/2), 450–950ms según distancia y cambio de zoom; zoom geométrico",
+        "purpose": "El globo gira y se acerca hasta el país elegido; también el zoom de +/− (×1.6)."
+      },
+      {
+        "name": "chinchetas",
+        "value": "opacity 0 y scale 0.9 a 1, 200ms ease-out, 40ms de escalonado por chincheta",
+        "purpose": "Las chinchetas caen al terminar el vuelo, una tras otra."
+      },
+      {
+        "name": "ficha",
+        "value": "transform 320ms ease-drawer; cierre por arrastre a 90px o 0.11 px/ms; hacia arriba se resiste al 15%",
+        "purpose": "La ficha sube desde abajo (móvil) o entra por la derecha (desde 768px)."
+      },
+      {
+        "name": "inercia",
+        "value": "rozamiento 0.94 por fotograma de 60 Hz; se descarta por debajo de 0.05 px/ms o si el dedo se paró más de 80ms",
+        "purpose": "El globo sigue girando al soltarlo y frena poco a poco."
+      },
+      {
+        "name": "giro-automatico",
+        "value": "4°/s a 30 fps; se detiene al primer toque, rueda o tecla",
+        "purpose": "Deriva lenta del globo al llegar."
+      },
+      {
+        "name": "aparicion-tierra",
+        "value": "opacidad de la tierra 0 a 1 en 300ms lineal al cargar el mapa",
+        "purpose": "Entrada del mapa."
+      },
+      {
+        "name": "aviso",
+        "value": "1800ms ease-out: entra 4px hacia arriba con opacidad (12%), se mantiene hasta el 80% y se desvanece",
+        "purpose": "Aviso «País · sin fotos» al tocar un país sin fotos."
+      },
+      {
+        "name": "reducido-mundo",
+        "value": "prefers-reduced-motion: sin giro automático, sin inercia ni aparición de la tierra; vuelos y zoom como cortes; chinchetas y aviso solo opacidad; ficha por opacidad 200ms",
+        "purpose": "Alternativa de movimiento reducido en /mundo."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "hoja",
+        "value": "576px"
+      },
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "cabecera-recuento",
+        "value": "420px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón primario",
+      "kind": "button",
+      "refersTo": "boton-primario",
+      "description": "Acción única de una hoja (p. ej. volver al índice desde la 404).",
+      "html": "<a class=\"ds-boton\" href=\"#\">Ver todos los lugares</a>",
+      "css": ".ds-boton{display:inline-flex;align-items:center;height:48px;padding:0 20px;border-radius:3px;background:var(--color-texto,#1b2830);color:var(--color-papel,#e9efeb);font-family:var(--font-sans,Archivo,sans-serif);font-stretch:62.5%;font-weight:800;font-size:17px;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;transition:scale 140ms cubic-bezier(0.23,1,0.32,1)}.ds-boton:hover{background:var(--color-cobalto,#2348a3)}.ds-boton:focus-visible{outline:2px solid var(--color-cobalto,#2348a3);outline-offset:3px}.ds-boton:active{scale:0.97}"
+    },
+    {
+      "name": "Enlace de volver",
+      "kind": "nav",
+      "refersTo": "enlace-volver",
+      "description": "Cabecera de cada hoja: volver a Imanes.",
+      "html": "<a class=\"ds-volver\" href=\"#\"><svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M10 3 5 8l5 5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Imanes</a>",
+      "css": ".ds-volver{display:inline-flex;align-items:center;gap:6px;height:44px;padding:0 8px;color:var(--color-texto-suave,#4a5b62);font-family:var(--font-sans,Archivo,sans-serif);font-stretch:62.5%;font-weight:800;font-size:17px;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;transition:scale 140ms cubic-bezier(0.23,1,0.32,1)}.ds-volver:hover{color:var(--color-texto,#1b2830)}.ds-volver:focus-visible{outline:2px solid var(--color-cobalto,#2348a3);outline-offset:3px;border-radius:2px}.ds-volver:active{scale:0.97}"
+    },
+    {
+      "name": "Bloque de datos",
+      "kind": "card",
+      "refersTo": "etiqueta-campo",
+      "description": "Nombre en display, regla y rejilla de campos con etiqueta mono.",
+      "html": "<div class=\"ds-datos\"><h1>San Sebastián</h1><dl><div><dt>País</dt><dd>España</dd></div><div><dt>Fecha</dt><dd>12 de agosto de 2024</dd></div></dl></div>",
+      "css": ".ds-datos{background:var(--color-papel,#e9efeb);color:var(--color-texto,#1b2830);padding:16px;font-family:var(--font-sans,Archivo,sans-serif)}.ds-datos h1{margin:0;font-size:56px;line-height:0.86;font-weight:800;font-stretch:62.5%;text-transform:uppercase}.ds-datos dl{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0 0;padding-top:12px;border-top:1px solid var(--color-regla,#b4c4bd)}.ds-datos dt{font-family:var(--font-mono,'Azeret Mono',monospace);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-texto-suave,#4a5b62)}.ds-datos dd{margin:6px 0 0;font-size:17px;font-weight:600}"
+    },
+    {
+      "name": "Fila del índice",
+      "kind": "custom",
+      "refersTo": "foto",
+      "description": "Miniatura, nombre condensado y fecha en mono, separadas por reglas.",
+      "html": "<a class=\"ds-fila\" href=\"#\"><span class=\"ds-mini\"></span><span class=\"ds-nombre\">Roma</span><span class=\"ds-fecha\">03.2023</span></a>",
+      "css": ".ds-fila{display:grid;grid-template-columns:56px 1fr auto;align-items:center;gap:16px;padding:12px 0;border-bottom:1px solid var(--color-regla,#b4c4bd);color:var(--color-texto,#1b2830);text-decoration:none;background:var(--color-papel,#e9efeb);transition:scale 140ms cubic-bezier(0.23,1,0.32,1)}.ds-fila:active{scale:0.97}.ds-fila:focus-visible{outline:2px solid var(--color-cobalto,#2348a3);outline-offset:3px}.ds-mini{width:56px;height:56px;border-radius:2px;background:var(--color-papel-hondo,#dde6e1)}.ds-nombre{font-family:var(--font-sans,Archivo,sans-serif);font-size:30px;line-height:1;font-weight:800;font-stretch:62.5%;text-transform:uppercase}.ds-fecha{font-family:var(--font-mono,'Azeret Mono',monospace);font-size:12px;color:var(--color-texto-suave,#4a5b62)}"
+    },
+    {
+      "name": "Sello",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Sello de goma en tinta de país, multiplicado sobre el papel, girado por semilla; se estampa una vez.",
+      "html": "<svg class=\"ds-sello\" viewBox=\"0 0 200 200\"><g fill=\"none\" stroke=\"currentColor\"><circle cx=\"100\" cy=\"100\" r=\"94\" stroke-width=\"4.5\"/><circle cx=\"100\" cy=\"100\" r=\"85\" stroke-width=\"1.4\"/><circle cx=\"100\" cy=\"100\" r=\"54\" stroke-width=\"1.4\"/></g><text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"26\" fill=\"currentColor\" style=\"font-stretch:62.5%;font-weight:800\">ESP</text><text x=\"100\" y=\"121\" text-anchor=\"middle\" font-size=\"11.5\" fill=\"currentColor\" font-family=\"monospace\" font-weight=\"600\">08.2024</text></svg>",
+      "css": ".ds-sello{width:160px;color:var(--color-carmin,#b02a3e);mix-blend-mode:multiply;opacity:0.92;rotate:-6deg;font-family:var(--font-sans,Archivo,sans-serif);animation:ds-estampar 260ms cubic-bezier(0.23,1,0.32,1) 220ms both}@keyframes ds-estampar{from{opacity:0;scale:1.12;filter:blur(1.5px)}55%{opacity:0.92}to{opacity:0.92;scale:1;filter:blur(0)}}@media (prefers-reduced-motion:reduce){.ds-sello{animation:none}}"
+    },
+    {
+      "name": "Control del visor",
+      "kind": "button",
+      "refersTo": "control-visor",
+      "description": "Cerrar y flechas del visor sobre la tapa.",
+      "html": "<div class=\"ds-tapa\"><button class=\"ds-control\" aria-label=\"Cerrar\"><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"><path d=\"M3.5 3.5l9 9M12.5 3.5l-9 9\"/></svg></button><button class=\"ds-control ds-borde\" aria-label=\"Foto siguiente\"><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 3l5 5-5 5\"/></svg></button></div>",
+      "css": ".ds-tapa{display:flex;gap:16px;padding:16px;background:var(--color-tapa-hondo,#170b10)}.ds-control{display:grid;place-items:center;width:44px;height:44px;border-radius:9999px;border:0;background:transparent;color:var(--color-tapa-texto,#f0e6e3);cursor:pointer;transition:scale 140ms cubic-bezier(0.23,1,0.32,1)}.ds-borde{border:1px solid rgb(185 165 166 / 0.3)}.ds-control:hover{background:rgb(255 255 255 / 0.08)}.ds-control:focus-visible{outline:2px solid var(--color-cobalto,#2348a3);outline-offset:3px}.ds-control:active{scale:0.97}.ds-control:disabled{opacity:0.25}"
+    },
+    {
+      "name": "Chip de país",
+      "kind": "chip",
+      "refersTo": "chip-pais",
+      "description": "Elige un país en el globo; en la tinta del país, se llena al pulsarlo.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\" aria-pressed=\"true\"><span class=\"ds-band\"></span><span>España</span></button><button class=\"ds-chip ds-cob\" aria-pressed=\"false\"><span class=\"ds-band\"></span><span>Italia</span></button></div>",
+      "css": ".ds-chips{display:flex;gap:8px;padding:16px;background:var(--color-papel,#e9efeb)}.ds-chip{display:flex;align-items:center;gap:8px;height:44px;padding:0 12px;border-radius:3px;border:1.5px solid currentColor;background:var(--color-papel,#e9efeb);color:var(--color-carmin,#b02a3e);font-family:var(--font-sans,Archivo,sans-serif);font-stretch:75%;font-weight:700;font-size:15px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:scale 140ms cubic-bezier(0.23,1,0.32,1)}.ds-cob{color:var(--color-cobalto,#2348a3)}.ds-band{width:18px;height:12px;border-radius:1px;background:currentColor;opacity:0.6}.ds-chip[aria-pressed=true]{background:currentColor}.ds-chip[aria-pressed=true] span:last-child{color:var(--color-papel,#e9efeb)}.ds-chip:focus-visible{outline:2px solid var(--color-cobalto,#2348a3);outline-offset:3px}.ds-chip:active{scale:0.97}"
+    },
+    {
+      "name": "Zoom del globo",
+      "kind": "button",
+      "refersTo": "zoom-globo",
+      "description": "Pila de + y − sobre papel, abajo a la derecha del globo.",
+      "html": "<div class=\"ds-zoom\"><button aria-label=\"Acercar\"><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"><path d=\"M8 3v10M3 8h10\"/></svg></button><span></span><button aria-label=\"Alejar\"><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"><path d=\"M3 8h10\"/></svg></button></div>",
+      "css": ".ds-zoom{display:inline-flex;flex-direction:column;overflow:hidden;border:1px solid var(--color-regla,#b4c4bd);border-radius:3px;background:var(--color-papel,#e9efeb)}.ds-zoom span{height:1px;background:var(--color-regla,#b4c4bd)}.ds-zoom button{display:grid;place-items:center;width:44px;height:44px;border:0;background:transparent;color:var(--color-texto,#1b2830);cursor:pointer;transition:scale 140ms cubic-bezier(0.23,1,0.32,1)}.ds-zoom button:hover{background:var(--color-papel-hondo,#dde6e1)}.ds-zoom button:focus-visible{outline:2px solid var(--color-cobalto,#2348a3);outline-offset:3px}.ds-zoom button:active{scale:0.97}"
+    },
+    {
+      "name": "Chincheta",
+      "kind": "custom",
+      "refersTo": "etiqueta-chincheta",
+      "description": "Punto de tinta con anillo de papel y nombre del lugar; primer toque resalta, segundo abre.",
+      "html": "<div class=\"ds-mapa\"><button class=\"ds-pin\"><span class=\"ds-punto\"></span><span class=\"ds-et\">San Sebastián</span></button><button class=\"ds-pin ds-on\" aria-pressed=\"true\"><span class=\"ds-punto\"></span><span class=\"ds-et\">Roma</span></button></div>",
+      "css": ".ds-mapa{display:flex;flex-direction:column;gap:8px;padding:16px 16px 16px 8px;background:var(--color-papel-hondo,#dde6e1)}.ds-pin{position:relative;display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:0;background:transparent;color:var(--color-carmin,#b02a3e);cursor:pointer;animation:ds-caer 200ms cubic-bezier(0.23,1,0.32,1) both}.ds-pin+.ds-pin{animation-delay:40ms}.ds-punto{width:14px;height:14px;border-radius:9999px;border:2px solid var(--color-papel,#e9efeb);background:currentColor;box-sizing:border-box}.ds-et{position:absolute;top:50%;left:34px;translate:0 -50%;padding:2px 6px;border:1px solid currentColor;border-radius:2px;background:var(--color-papel,#e9efeb);font-family:var(--font-sans,Archivo,sans-serif);font-stretch:62.5%;font-weight:800;font-size:15px;line-height:1;letter-spacing:0.08em;text-transform:uppercase;white-space:nowrap}.ds-on .ds-et{background:currentColor;color:var(--color-papel,#e9efeb)}.ds-on .ds-et{color:var(--color-papel,#e9efeb);background:var(--color-carmin,#b02a3e)}.ds-pin:focus-visible{outline:2px solid var(--color-cobalto,#2348a3);outline-offset:3px}@keyframes ds-caer{from{opacity:0;scale:0.9}}@media (prefers-reduced-motion:reduce){.ds-pin{animation:none}}"
+    },
+    {
+      "name": "Ficha del globo",
+      "kind": "card",
+      "refersTo": "ficha",
+      "description": "Hoja de papel con los lugares del país elegido: sube desde abajo en el móvil, panel de 380px a la derecha en pantallas anchas.",
+      "html": "<section class=\"ds-ficha\"><div class=\"ds-tir\"></div><div class=\"ds-cab\"><span class=\"ds-band2\"></span><h2>España</h2><button aria-label=\"Cerrar\"><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"><path d=\"M3.5 3.5l9 9M12.5 3.5l-9 9\"/></svg></button></div><p>1 lugar con fotos</p><a class=\"ds-fl\" href=\"#\"><span class=\"ds-mini2\"></span><span class=\"ds-nom\">San Sebastián</span></a></section>",
+      "css": ".ds-ficha{max-width:380px;padding:8px 16px 16px;background:var(--color-papel,#e9efeb) url(/papel/ondas.svg);background-size:240px 96px;border:1px solid var(--color-regla,#b4c4bd);border-radius:3px;color:var(--color-texto,#1b2830);font-family:var(--font-sans,Archivo,sans-serif)}.ds-tir{width:40px;height:4px;margin:0 auto;border-radius:9999px;background:var(--color-regla,#b4c4bd)}.ds-cab{display:flex;align-items:center;gap:12px;padding-top:12px}.ds-band2{width:27px;height:18px;border-radius:1px;background:var(--color-carmin,#b02a3e)}.ds-cab h2{flex:1;margin:0;font-size:40px;line-height:1.05;font-weight:800;font-stretch:62.5%;text-transform:uppercase;color:var(--color-carmin,#b02a3e)}.ds-cab button{display:grid;place-items:center;width:44px;height:44px;margin-right:-8px;border:0;border-radius:9999px;background:transparent;color:var(--color-texto-suave,#4a5b62);cursor:pointer}.ds-cab button:hover{background:var(--color-papel-hondo,#dde6e1);color:var(--color-texto,#1b2830)}.ds-cab button:focus-visible{outline:2px solid var(--color-cobalto,#2348a3);outline-offset:3px}.ds-ficha p{margin:4px 0 0;padding-bottom:8px;border-bottom:1px solid var(--color-regla,#b4c4bd);font-family:var(--font-mono,'Azeret Mono',monospace);font-size:12px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-texto-suave,#4a5b62)}.ds-fl{display:grid;grid-template-columns:56px 1fr;align-items:center;gap:16px;padding:12px 0;color:inherit;text-decoration:none}.ds-mini2{width:56px;height:56px;border-radius:2px;background:var(--color-papel-hondo,#dde6e1)}.ds-nom{font-size:30px;line-height:1;font-weight:800;font-stretch:62.5%;text-transform:uppercase}"
+    }
+  ],
+  "narrative": {
+    "northStar": "La hoja de visado",
+    "overview": "Cada imán es un sello de entrada y cada página es la hoja del pasaporte donde se estampó; las fotos son lo que volvió del viaje. El sistema es papel de seguridad, no interfaz: un fondo verde menta grisáceo y frío con una trama de guilloché en mosaico, reglas finas, una línea de microimpresión bajo la cabecera, un número de página perforado con láser y, al pie de la página de lugar, la zona de lectura mecánica (MRZ). Sobre ese papel la única tinta saturada es la de los sellos de goma, con bordes irregulares y una tinta por país.\n\nLa densidad es baja y vertical: una sola columna de 576px como máximo, un eje izquierdo que gobierna cada línea de texto, y las fotos ocupando casi todo el ancho entre medianiles de 16px. La profundidad nace solo del solapamiento (el sello se pisa sobre la esquina de la portada, los sellos del pliego se montan unos sobre otros, la roseta queda detrás), nunca de sombras. El visor a pantalla completa es la tapa del pasaporte: burdeos casi negro, sin papel ni trama.\n\nEl sistema rechaza, de forma confirmada en el contrato de dirección, la app de fotos oscura a sangre con un título sans sobre un degradado y el álbum de recortes con polaroids y cinta adhesiva.",
+    "keyCharacteristics": [
+      "Papel de seguridad frío (nunca crema) con trama de guilloché en todas las hojas.",
+      "Cuatro tintas de sello como único color saturado; una tinta por país.",
+      "Archivo extracondensado en mayúsculas para nombres; Azeret Mono para datos, etiquetas y MRZ.",
+      "Profundidad solo por solapamiento y multiplicación de tinta; cero sombras.",
+      "El visor es la tapa del pasaporte (`tapa-hondo`), el único lugar oscuro del sistema.",
+      "Movimiento escaso y físico: el sello se estampa una vez, cada foto se revela una vez.",
+      "El globo de /mundo es el mismo papel grabado: océano en `papel-hondo` con la trama, tierra en `papel` con filetes finos y los países visitados entintados como su sello."
+    ],
+    "rules": [
+      {
+        "name": "The Una Tinta Rule",
+        "body": "El color saturado es tinta de sello y nada más. Cada país lleva una sola tinta; la interfaz solo toma prestado el cobalto para foco, selección y hover.",
+        "section": "colors"
+      },
+      {
+        "name": "The Nunca Crema Rule",
+        "body": "El papel es verde menta grisáceo y frío. Un papel cálido o crema rompe el mundo.",
+        "section": "colors"
+      },
+      {
+        "name": "The Nombre Condensado Rule",
+        "body": "Los nombres propios (lugar, país, marca) van en Archivo extracondensado 800 en mayúsculas. Ningún otro texto usa ese registro a tamaño display.",
+        "section": "typography"
+      },
+      {
+        "name": "The Dato en Mono Rule",
+        "body": "Todo lo que un funcionario sellaría o leería por máquina (fechas, códigos ISO3, recuentos, número de foto, MRZ) va en Azeret Mono.",
+        "section": "typography"
+      },
+      {
+        "name": "The Un Eje Rule",
+        "body": "Todo el texto de una hoja se alinea a un único eje izquierdo; solo los sellos se salen de él.",
+        "section": "layout"
+      },
+      {
+        "name": "The Tinta No Sombra Rule",
+        "body": "Ningún elemento lleva `box-shadow` ni `drop-shadow`. Si algo necesita destacar, se solapa o se estampa.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Tinta del País Rule",
+        "body": "En /mundo, la tinta de un país puede marcar lo que pertenece a ese país y a nada más: su relleno en el globo, su chip, sus chinchetas y su nombre en la ficha. Nunca colorea controles genéricos (zoom, cerrar, cabecera), que siguen en `texto` / `texto-suave` sobre `papel`. En el frontmatter, `chip-pais` y `etiqueta-chincheta` muestran `carmin` como ejemplo; cada país usa la suya.",
+        "section": "colors"
+      },
+      {
+        "name": "The Globo Grabado Rule",
+        "body": "El globo es un grabado sobre papel, no una esfera en 3D: proyección ortográfica plana, sin sombras, brillo, relieve, degradados ni texturas de satélite. El océano es `papel-hondo` con la trama `ondas.svg` encima al 70%, fija a la pantalla como el propio papel, y la retícula de 10° en `guilloche` (0.5px al 45%). La tierra es `papel` con filetes de 0.5px en `texto-suave` al 55%. Los países con fotos llevan su tinta como un grano con manchas y poros multiplicado sobre el papel (patrón de 384px, alfa 0.14–0.38, al 70%; 85% en hover, doble pasada al elegirlo) y anclado al país, para que viaje con él al girar; su contorno es la tinta plena (1px, 1.6px al elegirlo). Cada lugar es un punto de tinta. El borde es un doble aro de sello: 1.4px en `texto` y un segundo aro de 0.6px al 50% a 5px por fuera.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do asentar toda hoja nueva sobre `papel` con la trama de guilloché, la cabecera de 56px y la microimpresión con el nombre de la página.",
+      "Do reservar el color saturado para la tinta de los sellos, una tinta por país, y el cobalto para foco, selección y hover.",
+      "Do dar profundidad por solapamiento y `multiply`, como el sello pisando la esquina de la portada.",
+      "Do escribir nombres en Archivo extracondensado 800 en mayúsculas y datos en Azeret Mono con cifras tabulares.",
+      "Do mantener el anillo de foco global: 2px `cobalto`, separación de 3px.",
+      "Do respetar `prefers-reduced-motion`: el sello solo aparece por opacidad en 200ms, las fotos no se revelan y la presión no escala.",
+      "Do dibujar cualquier mapa como el globo: papel, trama, filetes finos y tinta multiplicada con grano, con el doble aro de sello.",
+      "Do en /mundo, con `prefers-reduced-motion`: sin giro automático, sin inercia ni aparición de la tierra, vuelos y zoom como cortes directos, chinchetas y aviso solo por opacidad y la ficha por opacidad en 200ms.",
+      "Do detener todo movimiento automático en cuanto el usuario toca el globo."
+    ],
+    "donts": [
+      "Don't usar sombras de ningún tipo; la tinta no proyecta sombra.",
+      "Don't usar un papel crema o cálido, ni degradados detrás de los títulos.",
+      "Don't usar tintas de sello para texto corrido, fondos o bordes de interfaz.",
+      "Don't poner etiquetas pequeñas encima de los titulares; las etiquetas en mono solo nombran campos de datos (País, Fecha).",
+      "Don't convertir el visor en una pantalla con papel o trama; es la tapa, oscura y vacía salvo la foto.",
+      "Don't usar iconos de fuente ni emoji (tampoco banderas emoji); los iconos son SVG en línea y las banderas, SVG.",
+      "Don't convertir el globo en una Tierra brillante en 3D, con texturas de satélite, sombras, halo o aspecto de Google Maps.",
+      "Don't usar la tinta de un país en controles que no son de ese país."
+    ]
+  }
+}

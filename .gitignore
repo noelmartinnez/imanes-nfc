@@ -39,3 +39,21 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# fotos originales: solo se suben las versiones optimizadas de public/fotos
+/content/**/*.[jJ][pP][gG]
+/content/**/*.[jJ][pP][eE][gG]
+/content/**/*.[pP][nN][gG]
+/content/**/*.[wW][eE][bB][pP]
+/content/**/*.[aA][vV][iI][fF]
+/content/**/*.[tT][iI][fF]
+/content/**/*.[tT][iI][fF][fF]
+/content/**/*.[hH][eE][iI][cC]
+/content/**/*.[hH][eE][iI][fF]
+
+# se genera en cada dev/build/test (npm run mapa)
+/public/mapa/
+
+# impeccable (local)
+/.impeccable/review/
+/.impeccable/live/

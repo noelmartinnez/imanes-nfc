@@ -1,0 +1,197 @@
+{
+  "bulgaria/sofia": [
+    {
+      "archivo": "provisional-01.jpg",
+      "src": "/fotos/bulgaria/sofia/provisional-01.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoNABAAA4BaJbACdAEOvISsmAAA/uqwYXHRxnFrwogujpWK0weaAm9G6ZRbfboLgAA=",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-02.jpg",
+      "src": "/fotos/bulgaria/sofia/provisional-02.webp",
+      "ancho": 1500,
+      "alto": 1000,
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQAAsAA4BaJbACdAEOy9LQAAD+514WEMYdNXb+x4Y19pEiexayworrLCkvVo24AxwoDAAA",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-03.jpg",
+      "src": "/fotos/bulgaria/sofia/provisional-03.webp",
+      "ancho": 1200,
+      "alto": 1600,
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoMABAAA4BaJagCdGuAAszrV1JAAP7qsGFz0ytjuMPrb8609Ma9zGsURTdNbilAHGkAAA==",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-04.jpg",
+      "src": "/fotos/bulgaria/sofia/provisional-04.webp",
+      "ancho": 1200,
+      "alto": 1200,
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoQABAAA4BaJagCdGuAAszk7EIAAP7qsGFzvCyssqxYC0yWiAqdTnquKe+0Pj+QQAA=",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-05.jpg",
+      "src": "/fotos/bulgaria/sofia/provisional-05.webp",
+      "ancho": 1000,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoLABAAA4BaJbACdGuAAsztFrYwAP7qsGFzEKLqXwpPHNVEgYMA0rvONITIvk77AAA=",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-06.jpg",
+      "src": "/fotos/bulgaria/sofia/provisional-06.webp",
+      "ancho": 1600,
+      "alto": 1066,
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQAAsAA4BaJbACdAEOuOrteAD+51v2sBW92GUj4uDrA0WQoSjR9WoZjKUQAA==",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-07.jpg",
+      "src": "/fotos/bulgaria/sofia/provisional-07.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoNABAAA4BaJbACdAEOs7QAAP7qsGFzHg8C+QsJwX2d6vI3iDR5Cdh5gDtEBrTOoK0QAA==",
+      "fecha": null,
+      "gps": null
+    }
+  ],
+  "espana/san-sebastian": [
+    {
+      "archivo": "provisional-01.jpg",
+      "src": "/fotos/espana/san-sebastian/provisional-01.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoNABAAA4BaJQBOgCHf0CA8AAD+5wvIiqdffWfbktwKebxQXTXSIWkQQAAAAA==",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-02.jpg",
+      "src": "/fotos/espana/san-sebastian/provisional-02.webp",
+      "ancho": 1500,
+      "alto": 1000,
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQAAsAA4BaJQBOiP/wPQm6gAD+3q1e19YAX6poU0NtGDjk6FFqUT5uO0iMAA==",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-03.jpg",
+      "src": "/fotos/espana/san-sebastian/provisional-03.webp",
+      "ancho": 1200,
+      "alto": 1600,
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACQAQCdASoMABAAA4BaJQBOgCHUyAAA/ucRjeAP6UEqDoXrS91SBghpuKL6U0U62d5WdxGAAAA=",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-04.jpg",
+      "src": "/fotos/espana/san-sebastian/provisional-04.webp",
+      "ancho": 1200,
+      "alto": 1200,
+      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACQAQCdASoQABAAA4BaJQBOgCHU6YAA/ucKj1M7hVHWoBvhX/54jPi9bYK3LU8O+Nj+IkQA",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-05.jpg",
+      "src": "/fotos/espana/san-sebastian/provisional-05.webp",
+      "ancho": 1000,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoLABAAA4BaJQBOgCHZew8AAP7nCvTU39nkRNUdblQLaCvC7JRmG3GL4TLwAA==",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-06.jpg",
+      "src": "/fotos/espana/san-sebastian/provisional-06.webp",
+      "ancho": 1600,
+      "alto": 1066,
+      "blur": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoQAAsAA4BaJQBOgCHcMs6AAP7nGa9qgXZp0PjFta1/nAINX8HxXwAA",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-07.jpg",
+      "src": "/fotos/espana/san-sebastian/provisional-07.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACQAQCdASoNABAAA4BaJQBOgCHPBYAA/ucSruXkg9zKEg7oSs4QFnA5G69kUrB5iDENzGMCdL3fmAAA",
+      "fecha": null,
+      "gps": null
+    }
+  ],
+  "italia/roma": [
+    {
+      "archivo": "provisional-01.jpg",
+      "src": "/fotos/italia/roma/provisional-01.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoNABAAA4BaJZgCdAEOIk/IEAD+6rBh9r+TyUdaxdEXCI0b3ri5oid6qstRFLzSIo4AAA==",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-02.jpg",
+      "src": "/fotos/italia/roma/provisional-02.webp",
+      "ancho": 1500,
+      "alto": 1000,
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoQAAsAA4BaJZACdAEOvBv2BAAA/uqwc3uaShUKyooWFS1euLlhY1Zb3m0AAA==",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-03.jpg",
+      "src": "/fotos/italia/roma/provisional-03.webp",
+      "ancho": 1200,
+      "alto": 1600,
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoMABAAA4BaJZgCdAEO/Cex9rSAAP7qrY/R7lgBnr9+suI64uaIb5s7Vr1vdPzAAAA=",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-04.jpg",
+      "src": "/fotos/italia/roma/provisional-04.webp",
+      "ancho": 1200,
+      "alto": 1200,
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQABAAA4BaJZgCdAEO+9nC9AD+6q2P0e5YCuvaGaDEbQUc2P5Zm8h55YElY/TUh+AAAA==",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-05.jpg",
+      "src": "/fotos/italia/roma/provisional-05.webp",
+      "ancho": 1000,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoLABAAA4BaJZgCdAEOIkW54AAA/uqwYXPz+DL8jqbBCR1xc0Q1WrLT8qwl8AAA",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-06.jpg",
+      "src": "/fotos/italia/roma/provisional-06.webp",
+      "ancho": 1600,
+      "alto": 1066,
+      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoQAAsAA4BaJZACdAEOwCQAAP7qsGp+PYyRpIHZ81eiP65fLObnaO9LkRFhAAAA",
+      "fecha": null,
+      "gps": null
+    },
+    {
+      "archivo": "provisional-07.jpg",
+      "src": "/fotos/italia/roma/provisional-07.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoNABAAA4BaJZgCdAEO++mIAP7qrQS73hB1JpSj2IIrsfAGGbX1xc0RO9VWWoil5nAAAA==",
+      "fecha": null,
+      "gps": null
+    }
+  ]
+}

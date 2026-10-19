@@ -1,26 +1,262 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Papel de seguridad del visado */
+  --color-papel: #e9efeb;
+  --color-papel-hondo: #dde6e1;
+  --color-regla: #b4c4bd;
+  --color-perforado: #7c918a;
+  --color-guilloche: #4f8c86;
+  --color-texto: #1b2830;
+  --color-texto-suave: #4a5b62;
+
+  /* Tintas de sello: el único color saturado */
+  --color-carmin: #b02a3e;
+  --color-violeta: #5a3d98;
+  --color-cobalto: #2348a3;
+  --color-verde: #2c7651;
+
+  /* Tapa del pasaporte (visor y fondo en pantallas anchas) */
+  --color-tapa: #24121a;
+  --color-tapa-hondo: #170b10;
+  --color-tapa-texto: #f0e6e3;
+  --color-tapa-suave: #b9a5a6;
+
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-azeret), ui-monospace, monospace;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  html {
+    color-scheme: light;
+    background: var(--color-tapa);
+    color: var(--color-texto);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    scrollbar-color: var(--color-regla) transparent;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html:has(dialog[open]) {
+    overflow: hidden;
+  }
+
+  body {
+    min-height: 100dvh;
+    overflow-x: clip;
+    font-family: var(--font-sans);
+    font-feature-settings: "tnum" 1;
+  }
+
+  ::selection {
+    background: var(--color-cobalto);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-cobalto);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  a,
+  button {
+    touch-action: manipulation;
+  }
+
+  button,
+  .control {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* La hoja: papel con trama de guilloché. En pantallas anchas se ve la tapa alrededor. */
+.hoja {
+  overflow-x: clip;
+  background-color: var(--color-papel);
+  background-image: url("/papel/ondas.svg");
+  background-size: 240px 96px;
+}
+
+/* Sellos: tinta sobre papel, nunca sombras */
+.sello {
+  mix-blend-mode: multiply;
+  overflow: visible;
+}
+
+/* El sello se estampa una sola vez al llegar desde el imán */
+.estampar {
+  animation: estampar 260ms var(--ease-out) 220ms both;
+}
+
+@keyframes estampar {
+  from {
+    opacity: 0;
+    scale: 1.12;
+    filter: blur(1.5px);
+  }
+  55% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    filter: blur(0);
+  }
+}
+
+/* Revelado: cada foto pasa de borrosa a nítida al cargar, una vez */
+.revelado {
+  filter: blur(12px) saturate(0.6);
+  transition: filter 520ms var(--ease-out);
+}
+
+.revelado[data-cargada] {
+  filter: none;
+}
+
+/* Presión en fotos y controles */
+.pulsable {
+  transition: scale 140ms var(--ease-out);
+}
+
+.pulsable:active {
+  scale: 0.97;
+}
+
+/* Visor: la tapa del pasaporte */
+.visor {
+  opacity: 1;
+  transition:
+    opacity 220ms var(--ease-out),
+    display 220ms allow-discrete,
+    overlay 220ms allow-discrete;
+
+  @starting-style {
+    opacity: 0;
+  }
+}
+
+.visor[data-cerrando] {
+  opacity: 0;
+  transition-duration: 180ms;
+}
+
+.visor::backdrop {
+  background: transparent;
+}
+
+.visor-pista {
+  scrollbar-width: none;
+  overscroll-behavior: contain;
+  touch-action: pan-x pinch-zoom;
+}
+
+.visor-pista::-webkit-scrollbar {
+  display: none;
+}
+
+/* /mundo: el globo se queda con todos los gestos */
+html:has(.pantalla-mundo) {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+.globo {
+  touch-action: none;
+  cursor: grab;
+  outline-offset: -4px;
+}
+
+.globo:active {
+  cursor: grabbing;
+}
+
+/* Las chinchetas caen al terminar el vuelo hacia el país, una tras otra */
+.chincheta {
+  animation: chincheta 200ms var(--ease-out) both;
+  animation-delay: calc(var(--i, 0) * 40ms);
+}
+
+@keyframes chincheta {
+  from {
+    opacity: 0;
+    scale: 0.9;
+  }
+}
+
+.aviso {
+  animation: aviso 1800ms var(--ease-out) both;
+}
+
+@keyframes aviso {
+  from {
+    opacity: 0;
+    translate: -50% 4px;
+  }
+  12%,
+  80% {
+    opacity: 1;
+    translate: -50% 0;
+  }
+  to {
+    opacity: 0;
+    translate: -50% 0;
+  }
+}
+
+/* Ficha de lugares: sube desde abajo (o entra por la derecha en pantallas anchas) */
+.ficha {
+  transform: translateY(100%);
+  transition: transform 320ms var(--ease-drawer);
+}
+
+@media (min-width: 768px) {
+  .ficha {
+    transform: translateX(calc(100% + 1rem));
+  }
+}
+
+.ficha[data-abierta] {
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chincheta,
+  .aviso {
+    animation-name: aparecer;
+    animation-delay: 0ms;
+  }
+
+  .ficha {
+    transition: opacity 200ms ease;
+  }
+
+  .ficha:not([data-abierta]) {
+    opacity: 0;
+  }
+
+  .estampar {
+    animation: aparecer 200ms ease both;
+  }
+
+  .revelado {
+    filter: none;
+    transition: none;
+  }
+
+  .pulsable:active {
+    scale: 1;
+  }
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
 }
