@@ -22,21 +22,23 @@ export default async function PaginaPais({ params }: PageProps<"/[pais]">) {
   if (!pais) notFound();
 
   return (
-    <main className="hoja mx-auto min-h-dvh max-w-[36rem] px-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))]">
-      <Cabecera volver={{ href: "/", texto: "Imanes" }} />
-      <Microtexto texto={pais.nombre} />
+    <main className="hoja min-h-dvh pb-[calc(2.5rem+env(safe-area-inset-bottom))]">
+      <div className="mx-auto max-w-[48rem] px-4 lg:px-8">
+        <Cabecera volver={{ href: "/lista", texto: "Por país" }} />
+        <Microtexto texto={pais.nombre} />
 
-      <h1 className="mt-8 flex items-center gap-3 text-[clamp(3rem,15.5vw,5.25rem)] leading-[0.86] font-extrabold uppercase font-stretch-extra-condensed">
-        <Bandera iso={pais.iso} className="h-[0.42em] w-[0.63em]" />
-        {pais.nombre}
-      </h1>
+        <h1 className="mt-8 flex items-center gap-3 text-[clamp(3rem,15.5vw,5.25rem)] leading-[0.86] font-extrabold uppercase font-stretch-extra-condensed">
+          <Bandera iso={pais.iso} className="h-[0.42em] w-[0.63em]" />
+          {pais.nombre}
+        </h1>
 
-      <section aria-label="Sellos" className="relative isolate pt-10 pb-16">
-        <Roseta className="top-1/2 left-1/2 -z-10 w-[560px] max-w-none -translate-1/2" />
-        <Pliego lugares={pais.lugares} />
-      </section>
+        <section aria-label="Sellos" className="relative isolate pt-10 pb-16">
+          <Roseta className="top-1/2 left-1/2 -z-10 w-[560px] max-w-none -translate-1/2" />
+          <Pliego lugares={pais.lugares} />
+        </section>
 
-      <Indice paises={[pais]} conPais={false} />
+        <Indice paises={[pais]} conPais={false} />
+      </div>
     </main>
   );
 }

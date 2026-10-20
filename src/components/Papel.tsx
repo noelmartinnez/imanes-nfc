@@ -47,7 +47,7 @@ export function Roseta({ className = "" }: { className?: string }) {
 export function Mrz(props: Parameters<typeof lineasMrz>[0]) {
   const [a, b] = lineasMrz(props);
   return (
-    <div aria-hidden className="mt-14 -mx-4 bg-papel-hondo/80 px-4 py-3 select-none">
+    <div aria-hidden className="mt-14 -mx-4 bg-papel-hondo/80 px-4 py-3 select-none lg:-mx-8 lg:px-8">
       <pre className="overflow-hidden font-mono text-[min(3.15vw,15px)] leading-[1.5] font-medium tracking-[0.02em] text-texto/80">
         {a}
         {"\n"}

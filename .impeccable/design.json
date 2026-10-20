@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-19T15:11:32.968Z",
-  "title": "Design System: Imanes",
+  "generatedAt": "2026-10-20T15:16:27.070Z",
+  "title": "Design System: Worldtour",
   "extensions": {
     "colorMeta": {
       "papel": {
@@ -171,7 +171,7 @@
       },
       "tapa": {
         "role": "neutral",
-        "displayName": "Tapa",
+        "displayName": "Piel de Tapa",
         "canonical": "oklch(21.1% 0.033 352.1)",
         "tonalRamp": [
           "#15060d",
@@ -241,11 +241,11 @@
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Nombres de lugar en las filas del índice."
+        "purpose": "Nombres de lugar en las filas de registro y en «Pasar página»."
       },
       "title-sm": {
         "displayName": "Title pequeño",
-        "purpose": "Marca, enlace de volver y botón primario."
+        "purpose": "Marca «Worldtour», enlace de volver y botón primario."
       },
       "body": {
         "displayName": "Body",
@@ -261,18 +261,41 @@
       },
       "data": {
         "displayName": "Data",
-        "purpose": "Fechas, recuentos y contador del visor."
+        "purpose": "Recuentos de la banda superior, rótulo del paginador, fechas y contador del visor."
       },
       "mrz": {
         "displayName": "MRZ",
-        "purpose": "Zona de lectura mecánica al pie de la página de lugar."
+        "purpose": "Zona de lectura mecánica al pie de la página de lugar y de la página de datos (allí en cqw)."
       },
       "label-caps": {
         "displayName": "Label en versalitas condensadas",
         "purpose": "Paso de 15px: chips de país, encabezados de país del índice, etiqueta de chincheta (variante extracondensada 800) y aviso «sin fotos»."
+      },
+      "display-vista": {
+        "displayName": "Display de vista",
+        "purpose": "Título de la lista, «Por país»."
+      },
+      "headline-pais": {
+        "displayName": "Headline de país",
+        "purpose": "Nombre de cada país en la lista desplegable; toma su tinta en hover y desplegado."
+      },
+      "label-vista": {
+        "displayName": "Label de vista",
+        "purpose": "Opciones de la barra de vistas (12px en el móvil) y «Ver en el globo»."
       }
     },
-    "shadows": [],
+    "shadows": [
+      {
+        "name": "pliegue-lomo",
+        "value": "linear-gradient(to right, rgb(27 40 48 / 0.11), rgb(27 40 48 / 0) 9%)",
+        "purpose": "El papel se curva hacia el lomo; solo en las páginas del pasaporte, en espejo a la izquierda."
+      },
+      {
+        "name": "sombra-hoja",
+        "value": "capa var(--color-tapa-hondo), opacity = sin(ángulo) × 0.22",
+        "purpose": "La hoja que gira se oscurece al levantarse; quieta no lleva nada."
+      }
+    ],
     "motion": [
       {
         "name": "ease-out",
@@ -283,6 +306,81 @@
         "name": "ease-drawer",
         "value": "cubic-bezier(0.32, 0.72, 0, 1)",
         "purpose": "Retorno de la foto y del fondo cuando el arrastre de cierre no llega al umbral (320ms)."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.77, 0, 0.175, 1)",
+        "purpose": "Vuelo del sello entre el pasaporte y la página de lugar."
+      },
+      {
+        "name": "aparicion-pasaporte",
+        "value": "opacity 400ms y translate 14px a 0 en 600ms, ease-out; 200ms si ya se abrió en la sesión",
+        "purpose": "El pasaporte cerrado se posa sobre la mesa."
+      },
+      {
+        "name": "apertura",
+        "value": "espera 600ms; tapa 1000ms; aleteo de 4 hojas (26°, 17°, 10°, 5°) desde 380ms, cada 45ms, 560ms cada una; una vez por sesión",
+        "purpose": "El pasaporte se abre solo la primera vez; cualquier gesto la interrumpe."
+      },
+      {
+        "name": "sellos-hoja",
+        "value": "estampar 280ms ease-out, retardo i × 80ms + 60ms",
+        "purpose": "Los sellos de la primera doble página se estampan uno a uno tras la apertura."
+      },
+      {
+        "name": "muelle-hoja",
+        "value": "muelle de 0.5s, rebote 0 (masa 1, amortiguación crítica)",
+        "purpose": "Giro de una hoja al soltarla o al pasar página."
+      },
+      {
+        "name": "muelle-inclinacion",
+        "value": "muelle de 0.7s, rebote 0.2; máximo 4° (x) y 6° (y), al 60% al arrastrar",
+        "purpose": "El libro se inclina hacia el puntero; el reflejo de la lámina le sigue."
+      },
+      {
+        "name": "umbral-hoja",
+        "value": "0.11 px/ms en los últimos 100ms; zona muerta 6px; media vuelta = 1.5 páginas (doble) o 1 (simple)",
+        "purpose": "Un gesto rápido pasa la hoja aunque no llegue a la mitad."
+      },
+      {
+        "name": "teclado-pasaporte",
+        "value": "flechas, Inicio y Fin: corte directo, sin animación",
+        "purpose": "El teclado no espera a ninguna animación."
+      },
+      {
+        "name": "paginador",
+        "value": "opacity 300ms ease-out al terminar la apertura",
+        "purpose": "Aparición del paginador."
+      },
+      {
+        "name": "barra-vistas",
+        "value": "clip-path 260ms ease-out",
+        "purpose": "El recorte activo se desliza a su casilla."
+      },
+      {
+        "name": "barra-cede",
+        "value": "translate 320ms ease-drawer, por debajo de 768px",
+        "purpose": "La barra baja cuando sube la ficha de un país."
+      },
+      {
+        "name": "desplegable",
+        "value": "grid-template-rows 0fr a 1fr 240ms, opacity 200ms, ease-out; chevron 180° en 200ms",
+        "purpose": "Un país de la lista se despliega hasta la altura de sus lugares."
+      },
+      {
+        "name": "vuelo-sello",
+        "value": "view-transition morph 420ms ease-in-out, blur 1.5px al 35%",
+        "purpose": "El sello tocado vuela hasta la esquina de la portada de su lugar."
+      },
+      {
+        "name": "cambio-vista",
+        "value": "saliente opacity 120ms ease-out; entrante 200ms ease-out tras 60ms",
+        "purpose": "Cambio entre Pasaporte, Mundo y Lista."
+      },
+      {
+        "name": "reducido",
+        "value": "prefers-reduced-motion: pasaporte abierto sin apertura ni subida; sellos solo opacidad 200ms; barra y lista sin deslizar (opacidad 200ms); vuelo del sello 0s; sin revelado; sin escala al pulsar",
+        "purpose": "Alternativa de movimiento reducido."
       },
       {
         "name": "estampar",
@@ -303,11 +401,6 @@
         "name": "visor",
         "value": "opacity 0 a 1, 220ms ease-out (@starting-style); salida 180ms",
         "purpose": "Apertura y cierre del visor."
-      },
-      {
-        "name": "reducido",
-        "value": "prefers-reduced-motion: sello solo opacidad 200ms; sin revelado; sin escala al pulsar; scroll del visor sin suavizado",
-        "purpose": "Alternativa de movimiento reducido."
       },
       {
         "name": "vuelo",
@@ -360,16 +453,32 @@
         "value": "640px"
       },
       {
-        "name": "cabecera-recuento",
-        "value": "420px"
-      },
-      {
         "name": "md",
         "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      },
+      {
+        "name": "doble-pagina",
+        "value": "página >= 280px de ancho"
       }
     ]
   },
   "components": [
+    {
+      "name": "Barra de vistas",
+      "kind": "nav",
+      "refersTo": "barra-vistas",
+      "description": "Pasaporte · Mundo · Lista; la activa es un recorte en tinta oscura que se desliza.",
+      "html": "<nav class=\"ds-barra\"><div class=\"ds-barra-fila\"><a href=\"#\" aria-current=\"page\"><svg viewBox=\"0 0 16 16\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"><rect x=\"3.2\" y=\"1.8\" width=\"9.6\" height=\"12.4\" rx=\"1.2\"/><circle cx=\"8\" cy=\"7\" r=\"2.4\"/><path d=\"M5.6 11.2h4.8\"/></svg>Pasaporte</a><a href=\"#\"><svg viewBox=\"0 0 16 16\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"><circle cx=\"8\" cy=\"8\" r=\"6.3\"/><ellipse cx=\"8\" cy=\"8\" rx=\"2.8\" ry=\"6.3\"/><path d=\"M1.9 8h12.2\"/></svg>Mundo</a><a href=\"#\"><svg viewBox=\"0 0 16 16\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"><path d=\"M2.5 4h11M2.5 8h11M2.5 12h11\"/></svg>Lista</a><span class=\"ds-barra-activa\" aria-hidden=\"true\"></span></div></nav>",
+      "css": ".ds-barra{width:400px;padding:4px;background:var(--color-papel,#e9efeb);border:1px solid var(--color-regla,#b4c4bd);border-radius:3px}.ds-barra-fila{position:relative;display:grid;grid-template-columns:repeat(3,1fr)}.ds-barra a{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:8px;height:44px;border-radius:2px;color:var(--color-texto-suave,#4a5b62);font-family:var(--font-sans,Archivo,sans-serif);font-stretch:62.5%;font-weight:800;font-size:15px;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:color 260ms cubic-bezier(0.23,1,0.32,1),scale 140ms cubic-bezier(0.23,1,0.32,1)}.ds-barra a:hover{color:var(--color-texto,#1b2830)}.ds-barra a[aria-current]{color:var(--color-papel,#e9efeb)}.ds-barra a:focus-visible{outline:2px solid var(--color-cobalto,#2348a3);outline-offset:3px}.ds-barra a:active{scale:0.97}.ds-barra-activa{position:absolute;inset:0;background:var(--color-texto,#1b2830);clip-path:inset(0 66.667% 0 0 round 2px);transition:clip-path 260ms cubic-bezier(0.23,1,0.32,1)}"
+    },
     {
       "name": "Botón primario",
       "kind": "button",
@@ -382,9 +491,41 @@
       "name": "Enlace de volver",
       "kind": "nav",
       "refersTo": "enlace-volver",
-      "description": "Cabecera de cada hoja: volver a Imanes.",
-      "html": "<a class=\"ds-volver\" href=\"#\"><svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M10 3 5 8l5 5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Imanes</a>",
+      "description": "Cabecera de una hoja: vuelve a la página del pasaporte donde está su sello.",
+      "html": "<a class=\"ds-volver\" href=\"#\"><svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M10 3 5 8l5 5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Pasaporte</a>",
       "css": ".ds-volver{display:inline-flex;align-items:center;gap:6px;height:44px;padding:0 8px;color:var(--color-texto-suave,#4a5b62);font-family:var(--font-sans,Archivo,sans-serif);font-stretch:62.5%;font-weight:800;font-size:17px;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;transition:scale 140ms cubic-bezier(0.23,1,0.32,1)}.ds-volver:hover{color:var(--color-texto,#1b2830)}.ds-volver:focus-visible{outline:2px solid var(--color-cobalto,#2348a3);outline-offset:3px;border-radius:2px}.ds-volver:active{scale:0.97}"
+    },
+    {
+      "name": "Tapa del pasaporte",
+      "kind": "custom",
+      "refersTo": "tapa-pasaporte",
+      "description": "Piel burdeos con grano y grabado en lámina; el libro cerrado sobre la mesa.",
+      "html": "<div class=\"ds-tapa\"><svg viewBox=\"0 0 88 125\"><defs><linearGradient id=\"ds-lamina\" gradientUnits=\"userSpaceOnUse\" x1=\"0\" y1=\"20\" x2=\"88\" y2=\"62\"><stop offset=\"0\" stop-color=\"#b9a5a6\"/><stop offset=\"0.42\" stop-color=\"#f0e6e3\"/><stop offset=\"0.5\" stop-color=\"#fffaf7\"/><stop offset=\"0.58\" stop-color=\"#f0e6e3\"/><stop offset=\"1\" stop-color=\"#b9a5a6\"/></linearGradient></defs><text x=\"44\" y=\"22\" text-anchor=\"middle\" font-size=\"5.2\" letter-spacing=\"1.6\" fill=\"url(#ds-lamina)\" style=\"font-stretch:75%;font-weight:700\">PASAPORTE</text><g fill=\"none\" stroke=\"url(#ds-lamina)\"><circle cx=\"44\" cy=\"58\" r=\"20.6\" stroke-width=\"0.35\"/><circle cx=\"44\" cy=\"58\" r=\"19\" stroke-width=\"1.1\"/><circle cx=\"44\" cy=\"58\" r=\"13.5\" stroke-width=\"0.7\"/><ellipse cx=\"44\" cy=\"58\" rx=\"5.6\" ry=\"13.5\" stroke-width=\"0.5\"/><ellipse cx=\"44\" cy=\"58\" rx=\"10.6\" ry=\"13.5\" stroke-width=\"0.4\"/><path d=\"M30.5 58h27M32.34 51.2h23.32M32.34 64.8h23.32\" stroke-width=\"0.45\"/></g><text x=\"44\" y=\"97\" text-anchor=\"middle\" font-size=\"12.5\" letter-spacing=\"0.9\" fill=\"url(#ds-lamina)\" style=\"font-stretch:62.5%;font-weight:800\">WORLDTOUR</text></svg></div>",
+      "css": ".ds-tapa{width:220px;aspect-ratio:88/125;border-radius:0 3px 3px 0;font-family:var(--font-sans,Archivo,sans-serif);background-color:var(--color-tapa,#24121a);background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.35 0 0 0 0 0.38 0.35 0 0 0 -0.08'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)'/%3E%3C/svg%3E\");background-size:180px}.ds-tapa svg{display:block;width:100%;height:100%}"
+    },
+    {
+      "name": "Página abierta",
+      "kind": "card",
+      "refersTo": "tapa-pasaporte",
+      "description": "Página de visado dentro del filo de piel, con filo de 1px, pliegue junto al lomo y canto rayado.",
+      "html": "<div class=\"ds-abierto\"><div class=\"ds-pagina\"><p class=\"ds-pagina-pais\">España</p></div><span class=\"ds-canto\"></span></div>",
+      "css": ".ds-abierto{position:relative;width:240px;aspect-ratio:88/125;padding:3px 5px 3px 0;background:var(--color-tapa,#24121a);border-radius:0 3px 3px 0}.ds-pagina{position:relative;height:100%;border-radius:0 2px 2px 0;background-color:var(--color-papel,#e9efeb);background-image:url('/papel/ondas.svg');background-size:240px 96px;container-type:size}.ds-pagina::after{content:'';position:absolute;inset:0;border:1px solid var(--color-regla,#b4c4bd);border-left-width:0;border-radius:inherit;background:linear-gradient(to right,rgb(27 40 48 / 0.11),rgb(27 40 48 / 0) 9%)}.ds-pagina-pais{margin:0;padding:8cqw 6cqw 0;font-family:var(--font-sans,Archivo,sans-serif);font-stretch:75%;font-weight:700;font-size:5cqw;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-carmin,#b02a3e)}.ds-canto{position:absolute;top:0.4%;bottom:0.4%;left:calc(100% - 5px);width:5px;border-radius:0 2px 2px 0;background:repeating-linear-gradient(90deg,var(--color-papel,#e9efeb) 0 1px,var(--color-regla,#b4c4bd) 1px 2px)}"
+    },
+    {
+      "name": "País desplegable",
+      "kind": "custom",
+      "refersTo": "pais-desplegable",
+      "description": "Fila de la lista por país: se despliega hasta la altura de sus lugares.",
+      "html": "<div class=\"ds-pais\"><button type=\"button\" aria-expanded=\"false\" onclick=\"this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') !== 'true')\"><span class=\"ds-pais-nombre\">España</span><span class=\"ds-pais-n\">9 lugares</span><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6l5 5 5-5\"/></svg></button><div class=\"ds-pais-cuerpo\"><div><p>Cádiz · Sevilla · Lanzarote</p></div></div></div>",
+      "css": ".ds-pais{border-block:1px solid var(--color-regla,#b4c4bd);font-family:var(--font-sans,Archivo,sans-serif);color:var(--color-texto,#1b2830)}.ds-pais button{display:flex;align-items:center;gap:16px;width:100%;min-height:44px;padding:20px 0;border:0;background:none;color:inherit;text-align:left;cursor:pointer}.ds-pais-nombre{flex:1;padding-top:0.14em;font-stretch:62.5%;font-weight:800;font-size:clamp(2.25rem,7vw,4rem);line-height:0.9;text-transform:uppercase;transition:color 200ms}.ds-pais button:hover .ds-pais-nombre,.ds-pais button[aria-expanded=true] .ds-pais-nombre{color:var(--color-carmin,#b02a3e)}.ds-pais-n{font-family:var(--font-mono,'Azeret Mono',monospace);font-weight:500;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-texto-suave,#4a5b62)}.ds-pais svg{color:var(--color-texto-suave,#4a5b62);transition:rotate 200ms cubic-bezier(0.23,1,0.32,1)}.ds-pais button[aria-expanded=true] svg{rotate:180deg}.ds-pais button:focus-visible{outline:2px solid var(--color-cobalto,#2348a3);outline-offset:3px}.ds-pais-cuerpo{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows 240ms cubic-bezier(0.23,1,0.32,1),opacity 200ms cubic-bezier(0.23,1,0.32,1)}.ds-pais-cuerpo>div{min-height:0;overflow:hidden}.ds-pais-cuerpo p{margin:0 0 16px;font-size:17px}.ds-pais:has([aria-expanded=true]) .ds-pais-cuerpo{grid-template-rows:1fr;opacity:1}"
+    },
+    {
+      "name": "Fila de registro",
+      "kind": "card",
+      "refersTo": "foto",
+      "description": "Miniatura, nombre condensado y fecha en mono; la misma fila en la lista, el índice del país y la ficha.",
+      "html": "<a class=\"ds-fila\" href=\"#\"><span class=\"ds-fila-mini\"></span><span class=\"ds-fila-nombre\">Cádiz</span><span class=\"ds-fila-fecha\">23 JUN 2025</span></a>",
+      "css": ".ds-fila{display:grid;grid-template-columns:56px 1fr auto;align-items:center;gap:16px;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--color-regla,#b4c4bd) 80%,transparent);color:var(--color-texto,#1b2830);text-decoration:none;font-family:var(--font-sans,Archivo,sans-serif);transition:scale 140ms cubic-bezier(0.23,1,0.32,1)}.ds-fila-mini{width:56px;height:56px;border-radius:2px;background:var(--color-papel-hondo,#dde6e1)}.ds-fila-nombre{font-stretch:62.5%;font-weight:800;font-size:30px;line-height:1;text-transform:uppercase;transition:color 200ms}.ds-fila:hover .ds-fila-nombre{color:var(--color-cobalto,#2348a3)}.ds-fila-fecha{font-family:var(--font-mono,'Azeret Mono',monospace);font-size:12px;color:var(--color-texto-suave,#4a5b62)}.ds-fila:focus-visible{outline:2px solid var(--color-cobalto,#2348a3);outline-offset:3px}.ds-fila:active{scale:0.97}"
     },
     {
       "name": "Bloque de datos",
@@ -393,14 +534,6 @@
       "description": "Nombre en display, regla y rejilla de campos con etiqueta mono.",
       "html": "<div class=\"ds-datos\"><h1>San Sebastián</h1><dl><div><dt>País</dt><dd>España</dd></div><div><dt>Fecha</dt><dd>12 de agosto de 2024</dd></div></dl></div>",
       "css": ".ds-datos{background:var(--color-papel,#e9efeb);color:var(--color-texto,#1b2830);padding:16px;font-family:var(--font-sans,Archivo,sans-serif)}.ds-datos h1{margin:0;font-size:56px;line-height:0.86;font-weight:800;font-stretch:62.5%;text-transform:uppercase}.ds-datos dl{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0 0;padding-top:12px;border-top:1px solid var(--color-regla,#b4c4bd)}.ds-datos dt{font-family:var(--font-mono,'Azeret Mono',monospace);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-texto-suave,#4a5b62)}.ds-datos dd{margin:6px 0 0;font-size:17px;font-weight:600}"
-    },
-    {
-      "name": "Fila del índice",
-      "kind": "custom",
-      "refersTo": "foto",
-      "description": "Miniatura, nombre condensado y fecha en mono, separadas por reglas.",
-      "html": "<a class=\"ds-fila\" href=\"#\"><span class=\"ds-mini\"></span><span class=\"ds-nombre\">Roma</span><span class=\"ds-fecha\">03.2023</span></a>",
-      "css": ".ds-fila{display:grid;grid-template-columns:56px 1fr auto;align-items:center;gap:16px;padding:12px 0;border-bottom:1px solid var(--color-regla,#b4c4bd);color:var(--color-texto,#1b2830);text-decoration:none;background:var(--color-papel,#e9efeb);transition:scale 140ms cubic-bezier(0.23,1,0.32,1)}.ds-fila:active{scale:0.97}.ds-fila:focus-visible{outline:2px solid var(--color-cobalto,#2348a3);outline-offset:3px}.ds-mini{width:56px;height:56px;border-radius:2px;background:var(--color-papel-hondo,#dde6e1)}.ds-nombre{font-family:var(--font-sans,Archivo,sans-serif);font-size:30px;line-height:1;font-weight:800;font-stretch:62.5%;text-transform:uppercase}.ds-fecha{font-family:var(--font-mono,'Azeret Mono',monospace);font-size:12px;color:var(--color-texto-suave,#4a5b62)}"
     },
     {
       "name": "Sello",
@@ -452,15 +585,16 @@
     }
   ],
   "narrative": {
-    "northStar": "La hoja de visado",
-    "overview": "Cada imán es un sello de entrada y cada página es la hoja del pasaporte donde se estampó; las fotos son lo que volvió del viaje. El sistema es papel de seguridad, no interfaz: un fondo verde menta grisáceo y frío con una trama de guilloché en mosaico, reglas finas, una línea de microimpresión bajo la cabecera, un número de página perforado con láser y, al pie de la página de lugar, la zona de lectura mecánica (MRZ). Sobre ese papel la única tinta saturada es la de los sellos de goma, con bordes irregulares y una tinta por país.\n\nLa densidad es baja y vertical: una sola columna de 576px como máximo, un eje izquierdo que gobierna cada línea de texto, y las fotos ocupando casi todo el ancho entre medianiles de 16px. La profundidad nace solo del solapamiento (el sello se pisa sobre la esquina de la portada, los sellos del pliego se montan unos sobre otros, la roseta queda detrás), nunca de sombras. El visor a pantalla completa es la tapa del pasaporte: burdeos casi negro, sin papel ni trama.\n\nEl sistema rechaza, de forma confirmada en el contrato de dirección, la app de fotos oscura a sangre con un título sans sobre un degradado y el álbum de recortes con polaroids y cinta adhesiva.",
+    "northStar": "El pasaporte es la interfaz",
+    "overview": "La entrada no es un dibujo de un pasaporte sino el objeto: una libreta de piel burdeos con grano y un emblema estampado en lámina, que descansa sobre una mesa de papel de seguridad, se abre sola la primera vez, se inclina bajo la mano y se hojea página a página. Cada hoja de visado es el mundo de siempre: papel verde menta grisáceo y frío con trama de guilloché, microimpresión, número de página perforado con láser y, en la página de datos, la zona de lectura mecánica (MRZ). Sobre ese papel la única tinta saturada es la de los sellos de goma, una por país; cada sello es un lugar y al tocarlo vuela hasta la página de ese viaje.\n\nTres vistas comparten una misma cáscara: una banda fina arriba con la marca y los recuentos, y una barra de vistas abajo (Pasaporte · Mundo · Lista) al alcance del pulgar. El pasaporte y el globo son pantallas fijas que se quedan con los gestos; la lista y las páginas de lugar son hojas que se desplazan. Escritorio y móvil son iguales: a doble página y a dos columnas en pantallas anchas, a una página con el lomo a la izquierda y una columna de 576px en el móvil.\n\nLa profundidad nace del objeto, no de la interfaz: solapamiento, cantos de páginas apiladas, el filo de piel alrededor de las páginas abiertas, el pliegue junto al lomo y la sombra de la hoja que gira. El sistema rechaza, de forma confirmada en el contrato de dirección, la rejilla de tarjetas de fotos con un título sobre un degradado, la app de fotos oscura a sangre y el álbum de recortes con polaroids y cinta adhesiva.",
     "keyCharacteristics": [
-      "Papel de seguridad frío (nunca crema) con trama de guilloché en todas las hojas.",
+      "El pasaporte es un objeto físico con física de muelle: se abre, se inclina, sus hojas giran sobre el lomo.",
+      "Papel de seguridad frío (nunca crema) con trama de guilloché en todas las hojas; la mesa es el mismo papel, más hondo.",
       "Cuatro tintas de sello como único color saturado; una tinta por país.",
+      "La tapa es piel burdeos con grano; su rotulación y su emblema son lámina que recoge la luz al inclinarse.",
       "Archivo extracondensado en mayúsculas para nombres; Azeret Mono para datos, etiquetas y MRZ.",
-      "Profundidad solo por solapamiento y multiplicación de tinta; cero sombras.",
-      "El visor es la tapa del pasaporte (`tapa-hondo`), el único lugar oscuro del sistema.",
-      "Movimiento escaso y físico: el sello se estampa una vez, cada foto se revela una vez.",
+      "Profundidad por solapamiento y por el propio libro; ninguna sombra de interfaz.",
+      "Una barra de vistas compartida; la opción activa es un recorte de tinta oscura que se desliza.",
       "El globo de /mundo es el mismo papel grabado: océano en `papel-hondo` con la trama, tierra en `papel` con filetes finos y los países visitados entintados como su sello."
     ],
     "rules": [
@@ -475,13 +609,28 @@
         "section": "colors"
       },
       {
+        "name": "The Tinta del País Rule",
+        "body": "La tinta de un país puede marcar lo que pertenece a ese país y a nada más: sus sellos, su nombre en la cabecera de sus páginas de visado, su relleno en el globo, su chip, sus chinchetas, su nombre en la ficha y su nombre en la lista (al pasar por encima y desplegado). Nunca colorea controles genéricos (barra de vistas, paginador, zoom, cerrar, cabecera), que siguen en `texto` / `texto-suave` sobre `papel`. En el frontmatter, `chip-pais` y `etiqueta-chincheta` muestran `carmin` como ejemplo; cada país usa la suya.",
+        "section": "colors"
+      },
+      {
+        "name": "The Burdeos Es Tapa Rule",
+        "body": "Los burdeos (`tapa`, `tapa-hondo`) son la piel del pasaporte: tapa, contratapa, el filo alrededor de las páginas abiertas y el visor. Nunca son el fondo de una hoja ni del `html`.",
+        "section": "colors"
+      },
+      {
         "name": "The Nombre Condensado Rule",
         "body": "Los nombres propios (lugar, país, marca) van en Archivo extracondensado 800 en mayúsculas. Ningún otro texto usa ese registro a tamaño display.",
         "section": "typography"
       },
       {
         "name": "The Dato en Mono Rule",
-        "body": "Todo lo que un funcionario sellaría o leería por máquina (fechas, códigos ISO3, recuentos, número de foto, MRZ) va en Azeret Mono.",
+        "body": "Todo lo que un funcionario sellaría o leería por máquina (fechas, códigos ISO3, recuentos, número de foto, número de página, MRZ) va en Azeret Mono.",
+        "section": "typography"
+      },
+      {
+        "name": "The Página Es Un Objeto Rule",
+        "body": "Lo impreso en el pasaporte se mide en `cqw` de la página, nunca en px ni en `vw`: una página se ve igual en un móvil que en una pantalla grande.",
         "section": "typography"
       },
       {
@@ -490,14 +639,19 @@
         "section": "layout"
       },
       {
+        "name": "The Pulgar Rule",
+        "body": "La navegación entre vistas vive abajo, en la barra; arriba solo hay marca, recuentos y, en una hoja, volver.",
+        "section": "layout"
+      },
+      {
         "name": "The Tinta No Sombra Rule",
-        "body": "Ningún elemento lleva `box-shadow` ni `drop-shadow`. Si algo necesita destacar, se solapa o se estampa.",
+        "body": "Ningún elemento de interfaz lleva `box-shadow` ni `drop-shadow`. Si algo necesita destacar, se solapa o se estampa. Las dos únicas sombras del sistema son las del libro (el pliegue junto al lomo y la hoja que gira), y no salen del pasaporte.",
         "section": "elevation"
       },
       {
-        "name": "The Tinta del País Rule",
-        "body": "En /mundo, la tinta de un país puede marcar lo que pertenece a ese país y a nada más: su relleno en el globo, su chip, sus chinchetas y su nombre en la ficha. Nunca colorea controles genéricos (zoom, cerrar, cabecera), que siguen en `texto` / `texto-suave` sobre `papel`. En el frontmatter, `chip-pais` y `etiqueta-chincheta` muestran `carmin` como ejemplo; cada país usa la suya.",
-        "section": "colors"
+        "name": "The Libro Con Grosor Rule",
+        "body": "El pasaporte enseña su grosor con materiales, no con sombras proyectadas: el filo de piel de las tapas, los cantos rayados de las hojas y el filo de 1px de cada página.",
+        "section": "elevation"
       },
       {
         "name": "The Globo Grabado Rule",
@@ -507,24 +661,31 @@
     ],
     "dos": [
       "Do asentar toda hoja nueva sobre `papel` con la trama de guilloché, la cabecera de 56px y la microimpresión con el nombre de la página.",
+      "Do colgar toda vista nueva de la cáscara: banda superior con marca y recuentos, barra de vistas abajo.",
       "Do reservar el color saturado para la tinta de los sellos, una tinta por país, y el cobalto para foco, selección y hover.",
-      "Do dar profundidad por solapamiento y `multiply`, como el sello pisando la esquina de la portada.",
+      "Do dar profundidad por solapamiento y `multiply`, como el sello pisando la esquina de la portada; en el pasaporte, por su grosor: filo de piel, cantos y pliegue.",
       "Do escribir nombres en Archivo extracondensado 800 en mayúsculas y datos en Azeret Mono con cifras tabulares.",
+      "Do medir lo impreso en el pasaporte en `cqw` de la página.",
+      "Do mover el pasaporte con muelles (hoja 0.5s sin rebote, inclinación 0.7s con rebote 0.2) y pasar la hoja con un gesto rápido de más de 0.11 px/ms.",
+      "Do dejar que el teclado pase páginas al instante.",
+      "Do abrir el pasaporte solo una vez por sesión; después aparece abierto donde se dejó.",
       "Do mantener el anillo de foco global: 2px `cobalto`, separación de 3px.",
-      "Do respetar `prefers-reduced-motion`: el sello solo aparece por opacidad en 200ms, las fotos no se revelan y la presión no escala.",
+      "Do respetar `prefers-reduced-motion`: el pasaporte aparece abierto sin apertura ni subida, los sellos solo aparecen por opacidad en 200ms, el recorte de la barra salta sin deslizarse, la lista y la barra cambian solo por opacidad en 200ms, el vuelo del sello es un corte directo, las fotos no se revelan y la presión no escala.",
       "Do dibujar cualquier mapa como el globo: papel, trama, filetes finos y tinta multiplicada con grano, con el doble aro de sello.",
       "Do en /mundo, con `prefers-reduced-motion`: sin giro automático, sin inercia ni aparición de la tierra, vuelos y zoom como cortes directos, chinchetas y aviso solo por opacidad y la ficha por opacidad en 200ms.",
-      "Do detener todo movimiento automático en cuanto el usuario toca el globo."
+      "Do detener todo movimiento automático en cuanto el usuario toca el pasaporte o el globo."
     ],
     "donts": [
-      "Don't usar sombras de ningún tipo; la tinta no proyecta sombra.",
-      "Don't usar un papel crema o cálido, ni degradados detrás de los títulos.",
-      "Don't usar tintas de sello para texto corrido, fondos o bordes de interfaz.",
-      "Don't poner etiquetas pequeñas encima de los titulares; las etiquetas en mono solo nombran campos de datos (País, Fecha).",
+      "Don't usar sombras de interfaz de ningún tipo; la tinta no proyecta sombra. Las únicas sombras son el pliegue y la hoja que gira, dentro del pasaporte.",
+      "Don't usar un papel crema o cálido, ni degradados detrás de títulos o fotos. Los únicos degradados son materiales: la lámina de la tapa y el pliegue del lomo.",
+      "Don't usar tintas de sello para texto corrido, fondos o controles genéricos.",
+      "Don't usar el burdeos como fondo de una hoja o del `html`; es la piel del pasaporte y el visor.",
+      "Don't poner etiquetas pequeñas encima de los titulares; las etiquetas en mono solo nombran campos de datos (País, Fecha, Países, Lugares).",
       "Don't convertir el visor en una pantalla con papel o trama; es la tapa, oscura y vacía salvo la foto.",
       "Don't usar iconos de fuente ni emoji (tampoco banderas emoji); los iconos son SVG en línea y las banderas, SVG.",
       "Don't convertir el globo en una Tierra brillante en 3D, con texturas de satélite, sombras, halo o aspecto de Google Maps.",
-      "Don't usar la tinta de un país en controles que no son de ese país."
+      "Don't usar la tinta de un país en controles que no son de ese país.",
+      "Don't montar las vistas como una rejilla de tarjetas de fotos con el título sobre un degradado."
     ]
   }
 }

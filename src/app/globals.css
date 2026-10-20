@@ -33,7 +33,7 @@
 @layer base {
   html {
     color-scheme: light;
-    background: var(--color-tapa);
+    background: var(--color-papel);
     color: var(--color-texto);
     -webkit-tap-highlight-color: transparent;
     -webkit-text-size-adjust: 100%;
@@ -75,12 +75,265 @@
   }
 }
 
-/* La hoja: papel con trama de guilloché. En pantallas anchas se ve la tapa alrededor. */
+/* La hoja: papel con trama de guilloché */
 .hoja {
   overflow-x: clip;
   background-color: var(--color-papel);
   background-image: url("/papel/ondas.svg");
   background-size: 240px 96px;
+}
+
+/* La mesa: el mismo papel, más hondo, sobre el que descansa el pasaporte (y sus guardas) */
+.mesa {
+  background-color: var(--color-papel-hondo);
+  background-image: url("/papel/ondas.svg");
+  background-size: 240px 96px;
+}
+
+/* --- Pasaporte ------------------------------------------------------------------------ */
+
+html:has(.pantalla-pasaporte) {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+/* El escenario se queda con los gestos horizontales; los verticales siguen siendo de la página */
+.escenario-libro {
+  perspective: 2600px;
+  touch-action: pan-y pinch-zoom;
+  cursor: grab;
+  -webkit-user-select: none;
+  user-select: none;
+  opacity: 0;
+  translate: 0 14px;
+}
+
+.escenario-libro:active {
+  cursor: grabbing;
+}
+
+/* La primera vez, el pasaporte cerrado se posa sin prisa; después aparece sin más */
+.escenario-libro:not([data-fase="oculto"]) {
+  opacity: 1;
+  translate: none;
+  transition:
+    opacity 400ms var(--ease-out),
+    translate 600ms var(--ease-out);
+}
+
+.escenario-libro[data-fase="listo"] {
+  transition-duration: 200ms;
+}
+
+.paginador[data-fase="oculto"],
+.paginador[data-fase="apertura"] {
+  opacity: 0;
+}
+
+.paginador {
+  transition: opacity 300ms var(--ease-out);
+}
+
+.libro {
+  width: calc(var(--ancho-pagina, 300px) * 2);
+  height: var(--alto-pagina, 426px);
+}
+
+.hoja-libro {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: var(--ancho-pagina, 300px);
+  height: 100%;
+  transform-origin: left center;
+  transform-style: preserve-3d;
+}
+
+/* Las tapas sobresalen de las páginas por arriba, por abajo y por el canto (nunca por el lomo) */
+.hoja-tapa {
+  top: -1.25%;
+  height: 102.5%;
+  width: calc(var(--ancho-pagina, 300px) * 1.02);
+}
+
+.cara {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+  border-radius: 0 3px 3px 0;
+}
+
+.cara-dorso {
+  transform: rotateY(180deg);
+  border-radius: 3px 0 0 3px;
+}
+
+/* Lo impreso se mide con el tamaño de la página (cqw), no con el de la tapa que la forra */
+.pagina {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  container-type: size;
+  border-radius: inherit;
+}
+
+/* Guarda y página de datos pegadas a la tapa: el filo de piel queda alrededor */
+.cara-frente > .pagina-forrada {
+  inset: 1.22% 1.96% 1.22% 0;
+  border-radius: 0 2px 2px 0;
+}
+
+.cara-dorso > .pagina-forrada {
+  inset: 1.22% 0 1.22% 1.96%;
+  border-radius: 2px 0 0 2px;
+}
+
+/* Filo de la página y el pliegue junto al lomo, donde el papel se curva hacia dentro */
+.pagina-papel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--color-regla);
+  border-inline-start-width: 0;
+  border-radius: inherit;
+  background: linear-gradient(to right, rgb(27 40 48 / 0.11), rgb(27 40 48 / 0) 9%);
+  pointer-events: none;
+}
+
+.cara-dorso > .pagina-papel::after {
+  border-inline-start-width: 1px;
+  border-inline-end-width: 0;
+  background: linear-gradient(to left, rgb(27 40 48 / 0.11), rgb(27 40 48 / 0) 9%);
+}
+
+/* La hoja que gira se oscurece al levantarse (lo mueve el motor) */
+.sombra-hoja {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--color-tapa-hondo);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Tapa: piel burdeos con grano */
+.cuero {
+  background-color: var(--color-tapa);
+  /* Grano claro sobre el burdeos: el poro de la piel tiene que verse a 1x y a 2x */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.35 0 0 0 0 0.38 0.35 0 0 0 -0.08'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size: 180px;
+}
+
+/*
+ * Cantos de las páginas: el grosor que queda a cada lado, sobre el filo de la tapa y solo con
+ * el pasaporte abierto. Por encima de las tapas (z 2) y por debajo de las páginas (z 4 o más).
+ */
+.canto {
+  position: absolute;
+  z-index: 3;
+  top: 0.4%;
+  bottom: 0.4%;
+  pointer-events: none;
+  background: repeating-linear-gradient(90deg, var(--color-papel) 0 1px, var(--color-regla) 1px 2px);
+}
+
+.canto-derecho {
+  left: 100%;
+  width: clamp(3px, calc((var(--hojas-derecha, 0) - 2) * 1.5px), 7px);
+  border-radius: 0 2px 2px 0;
+}
+
+.canto-izquierdo {
+  right: 100%;
+  width: clamp(3px, calc((var(--hojas-izquierda, 0) - 2) * 1.5px), 7px);
+  border-radius: 2px 0 0 2px;
+}
+
+.libro[data-cerrado] .canto,
+.libro[data-modo="simple"] .canto-izquierdo {
+  display: none;
+}
+
+.sello-hoja {
+  -webkit-user-drag: none;
+}
+
+/* Al abrirse solo, la primera doble página llega en blanco y sus sellos se estampan uno a uno */
+.escenario-libro[data-fase="apertura"] .sello-hoja {
+  opacity: 0;
+}
+
+.escenario-libro[data-fase="estampando"] .cara[data-visible] .sello-hoja {
+  animation: estampar 280ms var(--ease-out) both;
+  animation-delay: calc(var(--i, 0) * 80ms + 60ms);
+}
+
+/* Barra de vistas: el recorte de la opción activa se desliza a su casilla */
+.navegacion-activa {
+  transition: clip-path 260ms var(--ease-out);
+}
+
+/* En el móvil, la ficha de un país ocupa el sitio de la barra: la barra baja mientras sube la ficha */
+[data-navegacion] {
+  transition: translate 320ms var(--ease-drawer);
+}
+
+@media (max-width: 639px) {
+  html:has(.ficha[data-abierta]) [data-navegacion] {
+    translate: 0 calc(100% + 1rem + env(safe-area-inset-bottom));
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  html:has(.ficha[data-abierta]) [data-navegacion] {
+    translate: -50% calc(100% + 1rem + env(safe-area-inset-bottom));
+  }
+}
+
+/* Lista por país: el país se despliega hasta la altura de sus lugares */
+.desplegable {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 240ms var(--ease-out),
+    opacity 200ms var(--ease-out);
+}
+
+.desplegable[data-abierto] {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+/* Transiciones entre páginas (View Transitions de React) */
+::view-transition-group(.morph) {
+  animation-duration: 420ms;
+  animation-timing-function: var(--ease-in-out);
+}
+
+::view-transition-image-pair(.morph) {
+  animation-name: vuelo-sello;
+}
+
+@keyframes vuelo-sello {
+  35% {
+    filter: blur(1.5px);
+  }
+}
+
+::view-transition-old(.vista) {
+  animation: 120ms var(--ease-out) both desvanecer;
+}
+
+::view-transition-new(.vista) {
+  animation: 200ms var(--ease-out) 60ms both aparecer;
+}
+
+@keyframes desvanecer {
+  to {
+    opacity: 0;
+  }
 }
 
 /* Sellos: tinta sobre papel, nunca sombras */
@@ -89,7 +342,7 @@
   overflow: visible;
 }
 
-/* El sello se estampa una sola vez al llegar desde el imán */
+/* El sello se estampa una sola vez al llegar a la página del lugar */
 .estampar {
   animation: estampar 260ms var(--ease-out) 220ms both;
 }
@@ -241,8 +494,29 @@ html:has(.pantalla-mundo) {
     opacity: 0;
   }
 
-  .estampar {
+  .estampar,
+  .escenario-libro[data-fase="estampando"] .cara[data-visible] .sello-hoja {
     animation: aparecer 200ms ease both;
+  }
+
+  .escenario-libro {
+    translate: none;
+  }
+
+  .navegacion-activa {
+    transition: none;
+  }
+
+  .desplegable {
+    transition: opacity 200ms ease;
+  }
+
+  [data-navegacion] {
+    transition: opacity 200ms ease;
+  }
+
+  ::view-transition-group(.morph) {
+    animation-duration: 0s;
   }
 
   .revelado {

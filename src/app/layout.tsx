@@ -17,9 +17,9 @@ const dominio = process.env.VERCEL_PROJECT_PRODUCTION_URL;
 
 export const metadata: Metadata = {
   metadataBase: new URL(dominio ? `https://${dominio}` : "http://localhost:3000"),
-  title: { default: "Imanes", template: "%s · Imanes" },
-  description: "Las fotos de viaje que hay detrás de cada imán de la nevera.",
-  appleWebApp: { capable: true, title: "Imanes", statusBarStyle: "default" },
+  title: { default: "Worldtour", template: "%s · Worldtour" },
+  description: "Todos mis viajes: un pasaporte con un sello por lugar, el globo y la lista por país.",
+  appleWebApp: { capable: true, title: "Worldtour", statusBarStyle: "default" },
   // Es un álbum personal: que no aparezca en buscadores.
   robots: { index: false, follow: false },
 };

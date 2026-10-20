@@ -12,46 +12,43 @@ Next.js (App Router) + TypeScript + Tailwind CSS v4, deployed on Vercel (`*.verc
 
 ## Users
 
-The owner and the people who visit their home, in equal measure. Someone holds a phone up to a souvenir fridge magnet; an NFC sticker behind it opens this site. The visitor lands cold, on a phone, standing in a kitchen, with no context and no intention of navigating a website. The owner uses it to relive the trip.
+The owner, and the friends and family the owner shows it to, on a laptop or on a phone in equal measure. They come to browse the trips: relive one, or wander through all of them.
 
 ## Product Purpose
 
-Each fridge magnet represents a city or town (not a country) that the owner visited — e.g. San Sebastián (Spain), Rome (Italy), Sofia (Bulgaria). Tapping the magnet opens that place's page: the owner's own photos from the trip, a full-screen photo viewer, and the trip date. A home page lists every country and its places. Success: the tap-to-photos moment feels instant and like opening an app, not a website.
+Worldtour is an interactive record of every trip the owner has taken (at least, every trip with photos). The entry is a passport that opens itself and can be tilted and paged through, with one stamp per place (a city or town), the stamps of a country sharing its pages. Two other views find the same places: a globe and a list by country (folded until a country is tapped). Each place opens its page with the trip's photos, a full-screen viewer and the date. Success: browsing the passport feels like holding a real one, and any trip is two taps away.
 
 ## Positioning
 
-A physical object on the fridge becomes a door into the real photos of that trip. The content is personal and real, never generic.
+A personal travel passport made of real trips and real photos, never generic.
 
 ## Operating Context
 
-- NFC stickers: TimesKey NTAG215, 25 mm PVC coin, 504 bytes, not anti-metal; written with NFC Tools on iPhone.
-- Stickers store a stable URL `/m/<id>` with a human-readable id (e.g. `/m/donosti`). That route redirects (307, never permanent) to the place page, so content and page URLs can change without rewriting stickers.
-- iPhone XS+ and Android read the URL without opening an app; the page opens in the mobile browser.
-- Content is added by dropping photos into a folder per place plus a small JSON file.
+- Content is added by dropping photos into a folder per place plus a small JSON file; the passport, globe and list update on build.
+- Spain (the home country) always opens the passport; the other countries follow by date of first trip.
+- Legacy `/m/<id>` URLs keep redirecting (307) through `content/tags.json` so no old link breaks, but nothing in the site links to them or mentions them.
 
 ## Capabilities and Constraints
 
-- Hierarchy: country → place (city/town). One or more magnets can point at the same place.
-- Per place: name, country, trip date (the only extra field for now), photos.
-- Mobile-first; must also work on desktop.
-- Future (unvalidated business): sell cork/wood world maps with NFC magnets where each sticker id redirects to a customer-configured link (e.g. their own Google Photos/iCloud album). The `/m/<id>` redirect layer exists to make that possible; customer photos must not be stored.
-- Undecided: final list of places (starting with San Sebastián, Roma, Sofía), custom domain, product name.
+- Hierarchy: country → place (city/town).
+- Per place: name, country, trip date, photos, optional coordinates for the globe.
+- Desktop and mobile are equal: the passport shows a two-page spread on wide screens and one page at a time on phones.
 
 ## Brand Commitments
 
-No product name yet; use a discreet provisional title. Copy is in Spanish, neutral and minimal: names, countries, dates. The photos do the talking.
+Name: Worldtour. Copy is in Spanish, neutral and minimal: names, countries, dates. The photos do the talking. The passport is an invented one, never a copy of an official document.
 
 ## Evidence on Hand
 
-The owner's own trip photos (not yet in the repo). Until they are added, placeholder images stand in and must be visibly temporary. Never use stock photos presented as the owner's.
+The owner's own trip photos for most places; placeholders stand in for the rest and must be visibly temporary. Never use stock photos presented as the owner's.
 
 ## Product Principles
 
-1. The photos are the product; the interface recedes.
-2. Tap to content in one step: the place page must render fast on a phone and never require navigation to reach the photos.
-3. Sticker URLs are forever; everything behind them is changeable.
+1. The passport is the interface, not a picture of one.
+2. The photos are the product; the interface recedes once a trip is open.
+3. Three ways to find a place (passport, globe, list), one place page.
 4. Adding a place must not require touching code.
 
 ## Accessibility & Inclusion
 
-Respect reduced motion; full keyboard and screen-reader support for the gallery and viewer; alt text per photo when provided.
+Respect reduced motion (the passport opens without animation and pages change with a short fade); full keyboard support (arrow keys turn pages) and screen-reader labels for every page and stamp; alt text per photo when provided.

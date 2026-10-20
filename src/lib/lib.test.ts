@@ -2,11 +2,23 @@ import { readFileSync } from "node:fs";
 import { geoContains } from "d3-geo";
 import { describe, expect, it } from "vitest";
 import { repartirEnColumnas } from "./columnas";
-import { getLugar, getLugares, getPaises, getRutas, getVecinos, ordenarFotos } from "./contenido";
+import {
+  getLugar,
+  getLugares,
+  getPaises,
+  getRutas,
+  getVecinos,
+  ordenarFotos,
+  ordenarPaises,
+  PAIS_DE_CASA,
+  type Lugar,
+  type Pais,
+} from "./contenido";
+import { getPasaporte, paginaDeLugar, paginarPasaporte } from "./pasaporte";
 import { aLonLat, type PaisGeo } from "./geo";
 import { leerEtiquetas, resolverEtiqueta, validarEtiquetas } from "./etiquetas";
 import { compararFechas, fechaLarga, fechaSello } from "./fecha";
-import { digitoControl, lineasMrz, transliterar } from "./mrz";
+import { digitoControl, lineasMrz, lineasMrzPasaporte, transliterar } from "./mrz";
 import { hash, rotacionSello } from "./sello";
 
 describe("fechas", () => {
@@ -126,6 +138,79 @@ describe("contenido real del repo", () => {
       v = getVecinos(v).siguiente;
     }
     expect(recorrido).toEqual(lugares.map((l) => l.ruta));
+  });
+});
+
+describe("pasaporte", () => {
+  const lugar = (pais: string, slug: string, fecha: string | null) =>
+    ({
+      slug,
+      ruta: `/${pais}/${slug}`,
+      nombre: slug,
+      fecha,
+      forma: "circulo",
+      tinta: "carmin",
+      semilla: hash(slug),
+      pais: { slug: pais, nombre: pais, iso: "XX", iso3: "XXX" },
+    }) as Lugar;
+  const pais = (slug: string, iso3: string, fechas: (string | null)[]) =>
+    ({
+      slug,
+      nombre: slug,
+      iso: "XX",
+      iso3,
+      tinta: "verde",
+      lugares: fechas.map((f, i) => lugar(slug, `${slug}-${i}`, f)),
+    }) as Pais;
+
+  it("pone primero el país de casa y después el resto por su primer viaje", () => {
+    const paises = [
+      pais("italia", "ITA", ["2024-05"]),
+      pais("sin-fecha", "AAA", [null]),
+      pais("espana", PAIS_DE_CASA, ["2025-01"]),
+      pais("bulgaria", "BGR", ["2025-03", "2023-10"]),
+    ];
+    expect(ordenarPaises(paises).map((p) => p.slug)).toEqual(["espana", "bulgaria", "italia", "sin-fecha"]);
+  });
+
+  it("agrupa los sellos por país, sigue en otra página si no caben y deja páginas libres", () => {
+    const paginas = paginarPasaporte([pais("espana", "ESP", Array(5).fill(null)), pais("italia", "ITA", [null])], 4);
+    expect(paginas.map((p) => [p.numero, p.pais?.slug ?? null, p.sellos.length])).toEqual([
+      [1, "espana", 4],
+      [2, "espana", 1],
+      [3, "italia", 1],
+      [4, null, 0],
+    ]);
+    expect(paginarPasaporte([pais("italia", "ITA", [null])])).toHaveLength(2);
+    expect(paginaDeLugar(paginas, "/italia/italia-0")).toBe(3);
+  });
+
+  it("su MRZ tiene dos líneas de 44 y los dígitos de control del TD3", () => {
+    const [a, b] = lineasMrzPasaporte({
+      titular: "Worldtour",
+      codigo: "WTR",
+      numero: "WT0000014",
+      desde: "2023-10",
+      hasta: "2025-04-26",
+      paises: 4,
+      lugares: 14,
+    });
+    expect(a).toHaveLength(44);
+    expect(b).toHaveLength(44);
+    expect(a.startsWith("P<WTRWORLDTOUR<<")).toBe(true);
+    expect(b.slice(0, 10)).toBe(`WT0000014${digitoControl("WT0000014")}`);
+    expect(b.slice(13, 19)).toBe("2310<<");
+    expect(b.slice(21, 27)).toBe("250426");
+    const compuesto = b.slice(0, 10) + b.slice(13, 20) + b.slice(21, 43);
+    expect(b[43]).toBe(digitoControl(compuesto));
+  });
+
+  it("con el contenido real, España abre el pasaporte y cada lugar tiene su sello", () => {
+    const { paginas, datos } = getPasaporte();
+    expect(paginas[0].pais?.slug).toBe("espana");
+    expect(paginas.length % 2).toBe(0);
+    expect(paginas.flatMap((p) => p.sellos)).toHaveLength(getLugares().length);
+    expect(datos.lugares).toBe(getLugares().length);
   });
 });
 

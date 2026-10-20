@@ -16,7 +16,7 @@ const DIGITOS: Record<string, string[]> = {
 const PASO = 3;
 const ANCHO_DIGITO = 5 * PASO + 3;
 
-export function NumeroPerforado({ numero, className = "" }: { numero: number; className?: string }) {
+export function NumeroPerforado({ numero, className = "h-8" }: { numero: number; className?: string }) {
   const texto = String(numero).padStart(2, "0");
   const agujeros: { x: number; y: number }[] = [];
   [...texto].forEach((d, i) => {
@@ -31,7 +31,7 @@ export function NumeroPerforado({ numero, className = "" }: { numero: number; cl
       viewBox={`0 0 ${texto.length * ANCHO_DIGITO - 3} ${7 * PASO}`}
       role="img"
       aria-label={`Página ${texto}`}
-      className={`h-8 w-auto text-perforado ${className}`}
+      className={`w-auto text-perforado ${className}`}
     >
       {agujeros.map(({ x, y }) => (
         <circle key={`${x}-${y}`} cx={x} cy={y} r={1.2} fill="currentColor" />

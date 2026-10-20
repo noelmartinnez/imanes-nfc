@@ -19,7 +19,7 @@ function Hoja({ vecino, siguiente = false }: { vecino: Vecino; siguiente?: boole
     >
       <span className="flex items-center gap-1.5 font-mono text-[11px] font-semibold tracking-[0.12em] text-texto-suave uppercase group-hover:text-texto">
         {siguiente ? null : <Flecha />}
-        Pág. {String(vecino.pagina).padStart(2, "0")}
+        {siguiente ? "Siguiente" : "Anterior"}
         {siguiente ? <Flecha siguiente /> : null}
       </span>
       <span className="max-w-full truncate text-[30px] leading-none font-extrabold uppercase font-stretch-extra-condensed">
@@ -30,11 +30,11 @@ function Hoja({ vecino, siguiente = false }: { vecino: Vecino; siguiente?: boole
   );
 }
 
-/** Al pie del visado: la página de antes y la de después del pasaporte. */
+/** Al pie del visado: el viaje de antes y el de después, en el orden del pasaporte. */
 export function PasarPagina({ anterior, siguiente }: { anterior: Vecino | null; siguiente: Vecino | null }) {
   if (!anterior && !siguiente) return null;
   return (
-    <nav aria-label="Páginas del pasaporte" className="mt-14 grid grid-cols-2 gap-4 border-t border-regla">
+    <nav aria-label="Otros viajes" className="mt-14 grid grid-cols-2 gap-4 border-t border-regla">
       {anterior ? <Hoja vecino={anterior} /> : <span />}
       {siguiente ? <Hoja vecino={siguiente} siguiente /> : <span />}
     </nav>

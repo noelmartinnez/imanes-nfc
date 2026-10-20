@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Imanes",
-    short_name: "Imanes",
-    description: "Las fotos de viaje que hay detrás de cada imán de la nevera.",
+    name: "Worldtour",
+    short_name: "Worldtour",
+    description: "Todos mis viajes: un pasaporte con un sello por lugar, el globo y la lista por país.",
     lang: "es",
     start_url: "/",
     display: "standalone",

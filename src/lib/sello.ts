@@ -23,6 +23,11 @@ export function elegir<T>(opciones: readonly T[], semilla: number) {
 
 const ROTACIONES = [-9, 6, -5, 8, -7, 4, -4, 9, -6, 5];
 
+/** Nombre de la transición que lleva el sello del pasaporte a la página de su lugar. */
+export function transicionSello(ruta: string) {
+  return `sello${ruta.replaceAll("/", "-")}`;
+}
+
 /** Inclinación del sello en grados; nunca recto, como un sello hecho a mano. */
 export function rotacionSello(semilla: number) {
   return elegir(ROTACIONES, semilla);

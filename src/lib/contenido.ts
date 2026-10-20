@@ -15,6 +15,8 @@ import { elegir, FORMAS, hash, TINTAS, type Forma, type Tinta } from "./sello";
 
 const CONTENIDO = path.join(process.cwd(), "content");
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+// Rutas propias de la web: un país no puede llamarse igual.
+const RESERVADOS = ["mundo", "lista", "m"];
 
 const EsquemaPais = z.strictObject({
   nombre: z.string().min(1),
@@ -132,6 +134,11 @@ function cargar(): Pais[] {
   const fotos = fs.existsSync(archivoFotos) ? leerJson(archivoFotos, EsquemaFotos) : {};
 
   const paises: Pais[] = carpetasCon(CONTENIDO, "pais.json").map((slugPais) => {
+    if (RESERVADOS.includes(slugPais)) {
+      throw new Error(
+        `La carpeta content/${slugPais} choca con la página /${slugPais} de la web: cámbiale el nombre (p. ej. ${slugPais}-pais)`,
+      );
+    }
     const dirPais = path.join(CONTENIDO, slugPais);
     const pais = leerJson(path.join(dirPais, "pais.json"), EsquemaPais);
     const tinta = pais.tinta ?? elegir(TINTAS, hash(slugPais));
@@ -187,15 +194,38 @@ function cargar(): Pais[] {
     return { slug: slugPais, ruta: `/${slugPais}`, nombre: pais.nombre, iso: pais.iso, iso3: pais.iso3, tinta, lugares };
   });
 
-  // Las páginas del pasaporte se numeran por orden de viaje.
-  const todos = paises.flatMap((p) => p.lugares).sort(ordenLugares);
-  todos.forEach((lugar, i) => (lugar.pagina = i + 1));
+  // Los lugares se numeran en el orden del pasaporte: país a país, y dentro de cada uno por fecha.
   for (const pais of paises) pais.lugares.sort(ordenLugares);
-  return paises.sort((a, b) => a.nombre.localeCompare(b.nombre, "es"));
+  const ordenados = ordenarPaises(paises);
+  ordenados.flatMap((p) => p.lugares).forEach((lugar, i) => (lugar.pagina = i + 1));
+  return ordenados;
 }
 
 function ordenLugares(a: Lugar, b: Lugar) {
   return compararFechas(a.fecha, b.fecha) || a.nombre.localeCompare(b.nombre, "es");
+}
+
+/** El país de casa, que abre siempre el pasaporte. */
+export const PAIS_DE_CASA = "ESP";
+
+/**
+ * Orden del pasaporte: primero el país de casa y después el resto por la fecha del primer viaje
+ * (los que no tienen fecha, al final y por nombre). Cada país trae sus lugares ya ordenados.
+ */
+export function ordenarPaises<P extends { iso3: string; nombre: string; lugares: { fecha: string | null }[] }>(
+  paises: P[],
+): P[] {
+  const primerViaje = (p: P) =>
+    p.lugares
+      .map((l) => l.fecha)
+      .filter((f): f is string => Boolean(f))
+      .sort()[0] ?? null;
+  return [...paises].sort(
+    (a, b) =>
+      Number(b.iso3 === PAIS_DE_CASA) - Number(a.iso3 === PAIS_DE_CASA) ||
+      compararFechas(primerViaje(a), primerViaje(b)) ||
+      a.nombre.localeCompare(b.nombre, "es"),
+  );
 }
 
 let cache: Pais[] | null = null;

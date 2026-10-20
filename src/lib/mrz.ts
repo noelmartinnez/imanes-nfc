@@ -33,6 +33,42 @@ function fechaMrz(fecha: string | null) {
   return `${String(anio % 100).padStart(2, "0")}${String(mes).padStart(2, "0")}${dd}`;
 }
 
+/**
+ * MRZ de la página de datos (pasaporte TD3, dos líneas de 44): el "nacimiento" es el primer
+ * viaje, la "caducidad" el último y el número personal guarda los recuentos.
+ */
+export function lineasMrzPasaporte(datos: {
+  titular: string;
+  codigo: string;
+  numero: string;
+  desde: string | null;
+  hasta: string | null;
+  paises: number;
+  lugares: number;
+}): [string, string] {
+  const primera = `P<${datos.codigo}${transliterar(datos.titular)}<<`.padEnd(LARGO, "<").slice(0, LARGO);
+  const documento = datos.numero.padEnd(9, "<").slice(0, 9);
+  const desde = fechaMrz(datos.desde);
+  const hasta = fechaMrz(datos.hasta);
+  const personal = `P${String(datos.paises).padStart(2, "0")}L${String(datos.lugares).padStart(3, "0")}`.padEnd(14, "<");
+  const compuesto = [
+    documento + digitoControl(documento),
+    desde + digitoControl(desde),
+    hasta + digitoControl(hasta),
+    personal + digitoControl(personal),
+  ];
+  const segunda = [
+    compuesto[0],
+    datos.codigo,
+    compuesto[1],
+    "<",
+    compuesto[2],
+    compuesto[3],
+    digitoControl(compuesto.join("")),
+  ].join("");
+  return [primera, segunda];
+}
+
 export function lineasMrz(datos: {
   lugar: string;
   pais: string;
@@ -43,7 +79,7 @@ export function lineasMrz(datos: {
   const primera = `V<${datos.iso3}${transliterar(datos.lugar)}<<${transliterar(datos.pais)}`
     .padEnd(LARGO, "<")
     .slice(0, LARGO);
-  const documento = `IMN${String(datos.numero).padStart(6, "0")}`.slice(0, 9);
+  const documento = `WTV${String(datos.numero).padStart(6, "0")}`.slice(0, 9);
   const fecha = fechaMrz(datos.fecha);
   const segunda = [
     documento,

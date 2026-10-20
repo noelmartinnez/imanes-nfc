@@ -68,7 +68,7 @@ export function Mundo({ paises }: { paises: PaisMundo[] }) {
   const bandaLibre = () => {
     if (!contenedor.current) return { arriba: 0, abajo: 0 };
     const r = contenedor.current.getBoundingClientRect();
-    const cabecera = document.querySelector("[data-cabecera-mundo]")?.getBoundingClientRect();
+    const cabecera = document.querySelector("[data-cabecera]")?.getBoundingClientRect();
     const barra = controles.current?.getBoundingClientRect();
     return {
       arriba: cabecera ? Math.max(cabecera.bottom - r.top, 0) : 0,
@@ -250,7 +250,8 @@ export function Mundo({ paises }: { paises: PaisMundo[] }) {
 
       <div
         ref={controles}
-        className="pointer-events-none absolute inset-x-0 bottom-0 z-10 flex items-end justify-between gap-3 px-4 pb-[calc(1rem+env(safe-area-inset-bottom))]"
+        // Por encima de la barra de vistas
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-10 flex items-end justify-between gap-3 px-4 pb-[calc(5.75rem+env(safe-area-inset-bottom))] sm:pb-[calc(5rem+env(safe-area-inset-bottom))] lg:px-8"
       >
         <nav aria-label="Países con fotos" className="pointer-events-auto">
           <ul className="flex flex-wrap gap-2">

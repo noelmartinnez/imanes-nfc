@@ -53,7 +53,7 @@ export function Ficha({ pais, abierta, tinta, activo, alCerrar }: Props) {
       aria-label={pais ? `Lugares de ${pais.nombre}` : undefined}
       data-abierta={abierta || undefined}
       inert={!abierta}
-      className="ficha hoja absolute inset-x-0 bottom-0 z-20 flex max-h-[54dvh] flex-col border-t border-regla md:inset-x-auto md:top-24 md:right-4 md:bottom-auto md:max-h-[calc(100dvh-8rem)] md:w-[380px] md:rounded-[3px] md:border"
+      className="ficha hoja absolute inset-x-0 bottom-0 z-20 flex max-h-[54dvh] flex-col border-t border-regla md:inset-x-auto md:top-24 md:right-4 md:bottom-auto md:max-h-[calc(100dvh-12rem)] md:w-[380px] md:rounded-[3px] md:border"
     >
       <div
         className="control shrink-0 touch-none px-4 pt-2 md:touch-auto"
