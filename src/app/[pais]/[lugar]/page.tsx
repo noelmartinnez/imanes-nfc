@@ -3,9 +3,10 @@ import { notFound } from "next/navigation";
 import { Bandera } from "@/components/Bandera";
 import { Galeria } from "@/components/Galeria";
 import { Cabecera, Microtexto, Mrz, Roseta } from "@/components/Papel";
+import { PasarPagina } from "@/components/PasarPagina";
 import { datosSello } from "@/components/Pliego";
 import { Sello } from "@/components/Sello";
-import { getLugar, getLugares } from "@/lib/contenido";
+import { getLugar, getLugares, getVecinos } from "@/lib/contenido";
 import { fechaLarga } from "@/lib/fecha";
 
 export const dynamicParams = false;
@@ -67,6 +68,8 @@ export default async function PaginaLugar({ params }: PageProps<"/[pais]/[lugar]
           }
         />
       </div>
+
+      <PasarPagina {...getVecinos(lugar)} />
 
       <Mrz lugar={lugar.nombre} pais={lugar.pais.nombre} iso3={lugar.pais.iso3} fecha={lugar.fecha} numero={lugar.pagina} />
     </main>

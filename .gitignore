@@ -57,3 +57,6 @@ next-env.d.ts
 # impeccable (local)
 /.impeccable/review/
 /.impeccable/live/
+
+# zips de fotos originales (se descomprimen en content/)
+/imágenes/

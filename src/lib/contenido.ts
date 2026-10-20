@@ -48,10 +48,22 @@ const EsquemaFotos = z.record(
       alto: z.number().int().positive(),
       blur: z.string(),
       fecha: z.string().nullable(),
+      tomada: z.string().nullable().optional(),
       gps: EsquemaGps.nullable().optional(),
     }),
   ),
 );
+
+type FotoProcesada = z.infer<typeof EsquemaFotos>[string][number];
+
+/** Por orden de toma (hora de la cámara); las que no la tienen, al final y por nombre. */
+export function ordenarFotos<T extends Pick<FotoProcesada, "archivo" | "tomada">>(fotos: T[]): T[] {
+  return [...fotos].sort(
+    (a, b) =>
+      compararFechas(a.tomada ?? null, b.tomada ?? null) ||
+      a.archivo.localeCompare(b.archivo, "es", { numeric: true }),
+  );
+}
 
 export type Foto = {
   src: string;
@@ -127,7 +139,7 @@ function cargar(): Pais[] {
     const lugares = carpetasCon(dirPais, "lugar.json").map((slug): Lugar => {
       const lugar = leerJson(path.join(dirPais, slug, "lugar.json"), EsquemaLugar);
       const semilla = hash(`${slugPais}/${slug}`);
-      const procesadas = fotos[`${slugPais}/${slug}`] ?? [];
+      const procesadas = ordenarFotos(fotos[`${slugPais}/${slug}`] ?? []);
       const portada = lugar.portada
         ? procesadas.findIndex((f) => f.archivo === lugar.portada)
         : 0;
@@ -205,6 +217,18 @@ export function getLugares() {
 
 export function getLugar(pais: string, lugar: string) {
   return getPais(pais)?.lugares.find((l) => l.slug === lugar) ?? null;
+}
+
+export type Vecino = Pick<Lugar, "ruta" | "nombre" | "fecha" | "pagina">;
+
+/** Las páginas de antes y de después en el pasaporte; null en la primera y en la última. */
+export function getVecinos(lugar: Pick<Lugar, "pagina">): { anterior: Vecino | null; siguiente: Vecino | null } {
+  const lugares = getLugares();
+  const vecino = (pagina: number): Vecino | null => {
+    const l = lugares.find((x) => x.pagina === pagina);
+    return l ? { ruta: l.ruta, nombre: l.nombre, fecha: l.fecha, pagina: l.pagina } : null;
+  };
+  return { anterior: vecino(lugar.pagina - 1), siguiente: vecino(lugar.pagina + 1) };
 }
 
 export type PaisMundo = Omit<Pais, "lugares"> & { lugares: LugarMundo[] };

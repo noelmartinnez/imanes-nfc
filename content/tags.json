@@ -1,5 +1,16 @@
 {
-  "donosti": "/espana/san-sebastian",
+  "cadiz": "/espana/cadiz",
+  "cracovia": "/polonia/cracovia",
+  "frigiliana": "/espana/frigiliana",
+  "lanzarote": "/espana/lanzarote",
+  "madrid": "/espana/madrid",
+  "nijar": "/espana/nijar",
+  "pais-vasco": "/espana/pais-vasco",
   "roma": "/italia/roma",
-  "sofia": "/bulgaria/sofia"
+  "santiago": "/espana/santiago",
+  "segovia": "/espana/segovia",
+  "sevilla": "/espana/sevilla",
+  "sofia": "/bulgaria/sofia",
+  "toledo": "/espana/toledo",
+  "val-d-aran": "/espana/val-d-aran"
 }

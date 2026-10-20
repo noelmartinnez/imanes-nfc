@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { geoContains } from "d3-geo";
 import { describe, expect, it } from "vitest";
 import { repartirEnColumnas } from "./columnas";
-import { getLugar, getLugares, getPaises, getRutas } from "./contenido";
+import { getLugar, getLugares, getPaises, getRutas, getVecinos, ordenarFotos } from "./contenido";
 import { aLonLat, type PaisGeo } from "./geo";
 import { leerEtiquetas, resolverEtiqueta, validarEtiquetas } from "./etiquetas";
 import { compararFechas, fechaLarga, fechaSello } from "./fecha";
@@ -112,6 +112,47 @@ describe("contenido real del repo", () => {
       .flatMap((p) => p.lugares.map((l) => l.pagina))
       .sort((a, b) => a - b);
     expect(paginas).toEqual(paginas.map((_, i) => i + 1));
-    expect(getLugar("espana", "san-sebastian")?.pais.iso3).toBe("ESP");
+    expect(getLugar("espana", "madrid")?.pais.iso3).toBe("ESP");
+  });
+
+  it("pasando páginas se recorre todo el pasaporte, de la primera a la última", () => {
+    const lugares = getLugares();
+    expect(getVecinos(lugares[0]).anterior).toBeNull();
+    expect(getVecinos(lugares.at(-1)!).siguiente).toBeNull();
+
+    const recorrido = [lugares[0].ruta];
+    for (let v = getVecinos(lugares[0]).siguiente; v; ) {
+      recorrido.push(v.ruta);
+      v = getVecinos(v).siguiente;
+    }
+    expect(recorrido).toEqual(lugares.map((l) => l.ruta));
+  });
+});
+
+describe("orden de las fotos", () => {
+  it("van por hora de toma, las que no la tienen al final y por nombre", () => {
+    const fotos = [
+      { archivo: "IMG_0240.JPG", tomada: "2025-04-27T21:31:00" },
+      { archivo: "IMG_10.JPG", tomada: null },
+      { archivo: "IMG_9652.JPG", tomada: "2025-04-26T11:00:00" },
+      { archivo: "IMG_9.JPG" },
+      { archivo: "IMG_0769.JPEG", tomada: "2025-04-26T12:02:00" },
+    ];
+    expect(ordenarFotos(fotos).map((f) => f.archivo)).toEqual([
+      "IMG_9652.JPG",
+      "IMG_0769.JPEG",
+      "IMG_0240.JPG",
+      "IMG_9.JPG",
+      "IMG_10.JPG",
+    ]);
+  });
+
+  it("deshace empates por nombre y no toca la lista original", () => {
+    const fotos = [
+      { archivo: "b.jpg", tomada: "2025-01-01T10:00:00" },
+      { archivo: "a.jpg", tomada: "2025-01-01T10:00:00" },
+    ];
+    expect(ordenarFotos(fotos).map((f) => f.archivo)).toEqual(["a.jpg", "b.jpg"]);
+    expect(fotos[0].archivo).toBe("b.jpg");
   });
 });

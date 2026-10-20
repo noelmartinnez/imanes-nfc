@@ -7,7 +7,8 @@
       "alto": 1500,
       "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoNABAAA4BaJbACdAEOvISsmAAA/uqwYXHRxnFrwogujpWK0weaAm9G6ZRbfboLgAA=",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-02.jpg",
@@ -16,7 +17,8 @@
       "alto": 1000,
       "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQAAsAA4BaJbACdAEOy9LQAAD+514WEMYdNXb+x4Y19pEiexayworrLCkvVo24AxwoDAAA",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-03.jpg",
@@ -25,7 +27,8 @@
       "alto": 1600,
       "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoMABAAA4BaJagCdGuAAszrV1JAAP7qsGFz0ytjuMPrb8609Ma9zGsURTdNbilAHGkAAA==",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-04.jpg",
@@ -34,7 +37,8 @@
       "alto": 1200,
       "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoQABAAA4BaJagCdGuAAszk7EIAAP7qsGFzvCyssqxYC0yWiAqdTnquKe+0Pj+QQAA=",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-05.jpg",
@@ -43,7 +47,8 @@
       "alto": 1500,
       "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoLABAAA4BaJbACdGuAAsztFrYwAP7qsGFzEKLqXwpPHNVEgYMA0rvONITIvk77AAA=",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-06.jpg",
@@ -52,7 +57,8 @@
       "alto": 1066,
       "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQAAsAA4BaJbACdAEOuOrteAD+51v2sBW92GUj4uDrA0WQoSjR9WoZjKUQAA==",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-07.jpg",
@@ -61,72 +67,1232 @@
       "alto": 1500,
       "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoNABAAA4BaJbACdAEOs7QAAP7qsGFzHg8C+QsJwX2d6vI3iDR5Cdh5gDtEBrTOoK0QAA==",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     }
   ],
-  "espana/san-sebastian": [
+  "espana/cadiz": [
+    {
+      "archivo": "IMG_3183.JPEG",
+      "src": "/fotos/espana/cadiz/img-3183.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoMABAAA4BaJQBOgBPDjvZwAP7gb9B164f2pGPmNyqQQOjN+c/gNG0bRfnFp/jxzlQ1CGiL9q6AAA==",
+      "fecha": "2025-06-23",
+      "gps": [
+        36.527,
+        -6.292
+      ],
+      "tomada": "2025-06-23T12:19:14"
+    },
+    {
+      "archivo": "IMG_3185.JPEG",
+      "src": "/fotos/espana/cadiz/img-3185.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoMABAAA4BaJYwCdAECpARMNGqGAAD+7eoTZMGN2Kyb1c9WcBZHintVIPUWT6hr2eTDAvLTTovIl3RcizhH8nnWzx7jOZYvIIAAAA==",
+      "fecha": "2025-06-23",
+      "gps": [
+        36.53,
+        -6.295
+      ],
+      "tomada": "2025-06-23T12:26:23"
+    },
+    {
+      "archivo": "IMG_3194.JPEG",
+      "src": "/fotos/espana/cadiz/img-3194.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoMABAAA4BaJYwCdADzGR24AP7rExU3YmprTMLYRigD5PBZIVptVtB07HNaTKMOcAA=",
+      "fecha": "2025-06-24",
+      "gps": [
+        36.14,
+        -5.854
+      ],
+      "tomada": "2025-06-24T12:37:46"
+    },
+    {
+      "archivo": "IMG_3296.JPEG",
+      "src": "/fotos/espana/cadiz/img-3296.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACQAgCdASoMABAAA4BaJbACdEf/i1zd9SlQPjgUAAD9Uzd9CTIw+OrGd4OtWNPyIbgvXSYJ+H7zmG5mZABN76Qw2bMNSXfcFF+LRoYOetddhJLN/n4UtL8lqjI6gNacWzFDIbit5BbiQM/+e4Q6FGsAAAA=",
+      "fecha": "2025-06-24",
+      "gps": [
+        36.136,
+        -5.844
+      ],
+      "tomada": "2025-06-24T14:10:59"
+    },
+    {
+      "archivo": "IMG_3298.JPEG",
+      "src": "/fotos/espana/cadiz/img-3298.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAQCdASoMABAAA4BaJQBOgBunUVVU4AD9o0+jXgVV/f6VwvfYsAQgKiP24hz1q6G97SFrUI7TAu+K39/IjivitbFJ+64AxVBR4wUdkW1HLOaOgeWq9Is5dEn8wDDYBl17MQAA",
+      "fecha": "2025-06-24",
+      "gps": [
+        36.136,
+        -5.844
+      ],
+      "tomada": "2025-06-24T14:34:06"
+    },
+    {
+      "archivo": "IMG_3302.JPEG",
+      "src": "/fotos/espana/cadiz/img-3302.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACQAQCdASoMABAAA4BaJQBOgA780AAA/tOVKQQMnsW8jyexOks72mNJy1+OKNzCLZL6aLT8UJnvJFKr/n4AAA==",
+      "fecha": "2025-06-24",
+      "gps": [
+        36.093,
+        -5.813
+      ],
+      "tomada": "2025-06-24T15:52:12"
+    },
+    {
+      "archivo": "IMG_3343.JPEG",
+      "src": "/fotos/espana/cadiz/img-3343.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoMABAAA4BaJYgCdADZZyWfAAD+yQwZlVxZIv+Qc9OHJaRkF1khVY9BZpwCgcQeRF2f+U6cSeCy63xfqUAAAA==",
+      "fecha": "2025-06-24",
+      "gps": [
+        36.089,
+        -5.785
+      ],
+      "tomada": "2025-06-24T18:36:24"
+    },
+    {
+      "archivo": "IMG_3440.JPEG",
+      "src": "/fotos/espana/cadiz/img-3440.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoMABAAA4BaJbACdAEQEXHf0AAA8balwBvLEdRDcsPCDfE15iZd+MBhVU0Fq2L79vjf0WGxL8x69VWo+WVwAA==",
+      "fecha": "2025-06-24",
+      "gps": [
+        36.087,
+        -5.784
+      ],
+      "tomada": "2025-06-24T19:02:56"
+    },
+    {
+      "archivo": "IMG_3658.JPEG",
+      "src": "/fotos/espana/cadiz/img-3658.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoMABAAA4BaJbACdAEOqhqAAP7pNVA1/YIIntFcemykrkwn1iZNb4aaEDwfmsOnIQnnCzMX/zQ63n/R2Nnel+hXqX7V7loA",
+      "fecha": "2025-06-25",
+      "gps": [
+        36.302,
+        -6.147
+      ],
+      "tomada": "2025-06-25T12:05:15"
+    },
+    {
+      "archivo": "IMG_3798.JPEG",
+      "src": "/fotos/espana/cadiz/img-3798.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABQAgCdASoMABAAA4BaJagCdADhkKXJpXb20AAA+W6UtwwVnufdCW3Rcngs6dlLB+a8x5hc9c0wLhdw4BzQthnFsydiyTixt/lgKUc3j+72h7KktDmGzJxnVv00Jc4BR2Jn30XWVNwAUVpAAAA=",
+      "fecha": "2025-06-23",
+      "gps": null,
+      "tomada": "2025-06-23T21:49:30"
+    },
+    {
+      "archivo": "IMG_3819.JPEG",
+      "src": "/fotos/espana/cadiz/img-3819.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwAgCdASoMABAAA4BaJaACdADbqjsEFT5yAADgCY4/gXglh4XspiyUnQmKFrfO+x7Ar3gVpy/HWo4XEYSVUkJtfn+YLFcT6XcayYrLB9f738rX0/B6QjIC0p3BTbpctQJMgAAA",
+      "fecha": "2025-06-23",
+      "gps": null,
+      "tomada": "2025-06-23T21:49:48"
+    },
+    {
+      "archivo": "IMG_3832.JPEG",
+      "src": "/fotos/espana/cadiz/img-3832.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwAgCdASoMABAAA4BaJbACdAYt9adIfgoLgADyaoKP8Ag0z1bDnfDY2FeJ39/YekPsXERr8/Jx63W4prAKWuO5zeW2bSzhJDZn5PgKOUYZYYqe53hsUutB0d/6I++ttAGT1vZfJNC6a7GZe6LAAA==",
+      "fecha": "2025-06-25",
+      "gps": [
+        36.53,
+        -6.304
+      ],
+      "tomada": "2025-06-25T20:49:51"
+    },
+    {
+      "archivo": "IMG_3838.JPEG",
+      "src": "/fotos/espana/cadiz/img-3838.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAgCdASoMABAAA4BaJQBOj+ADAp5IrdEAAP4mlMgiuvX7T2njflyhTF+oDGiqbA+OL7IbaTZLnAIAAAA=",
+      "fecha": "2025-06-25",
+      "gps": [
+        36.531,
+        -6.306
+      ],
+      "tomada": "2025-06-25T21:31:27"
+    },
+    {
+      "archivo": "IMG_4030.JPEG",
+      "src": "/fotos/espana/cadiz/img-4030.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoMABAAA4BaJYgCdADb5ZMgAP7tni/Ch6WkJfcyB7B+eXXxE8TZouFGfO/sr7a1lXqkUSj3K6pPCJEOQoAAAA==",
+      "fecha": "2025-06-24",
+      "gps": null,
+      "tomada": "2025-06-24T13:19:47"
+    }
+  ],
+  "espana/frigiliana": [
+    {
+      "archivo": "1717F7D5-C1CF-4E5F-8106-FFE2DBBA0474.JPG",
+      "src": "/fotos/espana/frigiliana/1717f7d5-c1cf-4e5f-8106-ffe2dbba0474.webp",
+      "ancho": 828,
+      "alto": 1472,
+      "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoJABAAA4BaJYgCdAEPC8n8H7wAAM4QSDYsYdioM8BRNmTGqp/erY+5yOUW3wKtvc2U/WZKCk8j7jJkTW0A2fEYUBZrRY7XcFfcQEGqKmgAAA==",
+      "fecha": "2022-07-16",
+      "gps": null,
+      "tomada": "2022-07-16T14:02:42"
+    },
+    {
+      "archivo": "IMG_6758.JPEG",
+      "src": "/fotos/espana/frigiliana/img-6758.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoMABAAA4BaJQBdgMXmtmZN/+/0QAD5aCnMQyno3rpLu39oFK2mFp/SZwntFF3PtC7IVAYOLOHDgx1T58N0u2DiHlngmINmlwytmpSssBjmGWqpg+/g8+t4cvEAAA==",
+      "fecha": "2022-07-16",
+      "gps": [
+        36.941,
+        -3.361
+      ],
+      "tomada": "2022-07-16T13:45:43"
+    },
+    {
+      "archivo": "IMG_6765.JPEG",
+      "src": "/fotos/espana/frigiliana/img-6765.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoMABAAA4BaJagAAltiFcgfgAD+L3Pb4m2XmAC9updAemIDmTur3qCKoBKp0D8sXFsQ7eP6M1Znaz5bYyafobGtM6iipCTsk3VsMDU6zwn//GD66IAAAA==",
+      "fecha": "2022-07-16",
+      "gps": [
+        36.94,
+        -3.36
+      ],
+      "tomada": "2022-07-16T14:26:11"
+    },
+    {
+      "archivo": "IMG_6768.JPEG",
+      "src": "/fotos/espana/frigiliana/img-6768.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoMABAAA4BaJbACdADdLNoDBJMIAP6lWC+SQLftJ93D+8fuPW4MKJ8AnOJ3kkYs4HYZrpEbp0/YGTZrD63oE+Lrta0XTuv4HC9PyuNLeBcmw5x+rZCsEk6CfXyE1MoODoAAAA==",
+      "fecha": "2022-07-16",
+      "gps": [
+        36.94,
+        -3.36
+      ],
+      "tomada": "2022-07-16T14:49:48"
+    }
+  ],
+  "espana/lanzarote": [
+    {
+      "archivo": "IMG_0240.JPG",
+      "src": "/fotos/espana/lanzarote/img-0240.webp",
+      "ancho": 1800,
+      "alto": 2400,
+      "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoMABAAA4BaJYgCdADcCgDEwAD+7eaZesza+TtYqrs+KBH+OZ7wDfqeqGkHnqoE7bba3xzMwMs4BoeAAAA=",
+      "fecha": "2025-04-27",
+      "gps": null,
+      "tomada": "2025-04-27T21:31:02"
+    },
+    {
+      "archivo": "IMG_0282.JPG",
+      "src": "/fotos/espana/lanzarote/img-0282.webp",
+      "ancho": 1600,
+      "alto": 2400,
+      "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoLABAAA4BaJbACdAYuvvkdHmdAAP3e/5i4jfW8tklvIEHDy+zOi9OOIzHMJr75AYSUPLzx7XZ9x9r96/NFB/Y5Rb7KN5/4/nftXBPZaZ2n0AAA",
+      "fecha": "2025-04-28",
+      "gps": null,
+      "tomada": "2025-04-28T12:48:49"
+    },
+    {
+      "archivo": "IMG_0387.JPG",
+      "src": "/fotos/espana/lanzarote/img-0387.webp",
+      "ancho": 1600,
+      "alto": 2400,
+      "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoLABAAA4BaJbACdAD0Op/x2ZEAAMqpoFvPURsa2IjTbQZqB5cswirPJEJ/StozBON0LYLCrBJpdP0ObvVg4mukNTa1cHK8DeP539oBtPUNSs7M33LIMk8bdZ7MviiAAAA=",
+      "fecha": "2025-04-28",
+      "gps": null,
+      "tomada": "2025-04-28T14:45:12"
+    },
+    {
+      "archivo": "IMG_0464.JPG",
+      "src": "/fotos/espana/lanzarote/img-0464.webp",
+      "ancho": 2400,
+      "alto": 1600,
+      "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQAAsAA4BaJbACdEf/ged1hUC2AAD+ozLRQKuSMDivWkdcpVbt4NOh+HWADa7M6JDyGBUI/H88F66yMzHiXxgCYF7+S1poQAA=",
+      "fecha": "2025-04-29",
+      "gps": null,
+      "tomada": "2025-04-29T11:46:22"
+    },
+    {
+      "archivo": "IMG_0769.JPEG",
+      "src": "/fotos/espana/lanzarote/img-0769.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoMABAAA4BaJYwCdAEWO0SnGLnAgAD+9dWaBm9nuaJDo/WOMJUPzsFOXeJQhRMd1in/WRTumkBbsr+TFF0auuUDVQ//+Oi1R1Vm9PvPwYsAAA==",
+      "fecha": "2025-04-26",
+      "gps": [
+        28.974,
+        -13.637
+      ],
+      "tomada": "2025-04-26T12:02:01"
+    },
+    {
+      "archivo": "IMG_0795.JPEG",
+      "src": "/fotos/espana/lanzarote/img-0795.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAABwAgCdASoMABAAA4BaJZgCdGuAAs3cMkFjHEwAAMsmMjYB5SKCR/wqUihEze/vxLsifQP/Us97WoTf9BfenVRJOTmhbvep8AAAAA==",
+      "fecha": "2025-04-26",
+      "gps": [
+        28.97,
+        -13.715
+      ],
+      "tomada": "2025-04-26T13:12:14"
+    },
+    {
+      "archivo": "IMG_0810.JPEG",
+      "src": "/fotos/espana/lanzarote/img-0810.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABwAgCdASoMABAAA4BaJagC7BJfxAeCRWqLtegAAP7vm3Fvzskl8RCFSfRfsEpW4lvsg5ytW5tV6w9zjQV85SXaCkunqMW2V5/mjMHsG23kOIM2Mjn0J/H0kJ6gbYBVCDGxAAAA",
+      "fecha": "2025-04-26",
+      "gps": [
+        28.969,
+        -13.715
+      ],
+      "tomada": "2025-04-26T13:53:23"
+    },
+    {
+      "archivo": "IMG_0811.JPEG",
+      "src": "/fotos/espana/lanzarote/img-0811.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoMABAAA4BaJYgCdAELJ+bx8wAA/tUOeYSqoBp3CMQmIIYnu3GlbEf1qqn+yTNy03QQjVbPuHlSsfZTSsYwAFXsiFX/wAAA",
+      "fecha": "2025-04-26",
+      "gps": [
+        28.97,
+        -13.715
+      ],
+      "tomada": "2025-04-26T13:56:49"
+    },
+    {
+      "archivo": "IMG_0829.JPEG",
+      "src": "/fotos/espana/lanzarote/img-0829.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoMABAAA4BaJagCdAEO38qPveqAAP6LsVLP4qYCZ0QmkNOnw2gMxXn6aCr1Z6yxLsjdN2FPWgzjHeU9Migk2cO7q8AAAA==",
+      "fecha": "2025-04-26",
+      "gps": [
+        28.978,
+        -13.829
+      ],
+      "tomada": "2025-04-26T18:56:17"
+    },
+    {
+      "archivo": "IMG_0836.JPEG",
+      "src": "/fotos/espana/lanzarote/img-0836.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoMABAAA4BaJQBOkCYjApn31fmAAP6yD+SVoVqnJVe1WmvSp4F9CiWR1+AfSeYKoYw0NOaAY4eBXJZSPksInuQSBqaW1VE/hXWAAA==",
+      "fecha": "2025-04-26",
+      "gps": [
+        28.954,
+        -13.833
+      ],
+      "tomada": "2025-04-26T19:50:13"
+    },
+    {
+      "archivo": "IMG_0998.JPEG",
+      "src": "/fotos/espana/lanzarote/img-0998.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoMABAAA4BaJQBOgBuVL3XAAP7gy1903hP2gxe8/Mil3V87oPVvWFUulVt2WTEU4Wiy98oM7UAAAA==",
+      "fecha": "2025-04-27",
+      "gps": [
+        29.126,
+        -13.525
+      ],
+      "tomada": "2025-04-27T13:39:01"
+    },
+    {
+      "archivo": "IMG_1007.JPEG",
+      "src": "/fotos/espana/lanzarote/img-1007.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoMABAAA4BaJYwCdAEOtfRowAD+6nkHDfescSGb1qGmwtUvUDJQFC6ICAuKkWonAAA=",
+      "fecha": "2025-04-27",
+      "gps": [
+        29.116,
+        -13.554
+      ],
+      "tomada": "2025-04-27T15:54:09"
+    },
+    {
+      "archivo": "IMG_1031.JPEG",
+      "src": "/fotos/espana/lanzarote/img-1031.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoMABAAA4BaJYwCdAERHJdvjAD+7XzpugDRFMrT73kOdusbKYgxeeoR2ynat18fVCMstbKdgAA=",
+      "fecha": "2025-04-27",
+      "gps": [
+        29.116,
+        -13.557
+      ],
+      "tomada": "2025-04-27T16:34:18"
+    },
+    {
+      "archivo": "IMG_1074.JPEG",
+      "src": "/fotos/espana/lanzarote/img-1074.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoMABAAA4BaJYwCdAD0L8h6QAD+524sQWQFwj5Mug8vaUuLqSssWu1EUkqC3hNwogAAAA==",
+      "fecha": "2025-04-27",
+      "gps": [
+        29.116,
+        -13.557
+      ],
+      "tomada": "2025-04-27T16:37:01"
+    },
+    {
+      "archivo": "IMG_1349.JPEG",
+      "src": "/fotos/espana/lanzarote/img-1349.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoMABAAA4BaJbACdAEXV2GCayFA0ADiH2rwy6FvKh//QAufaZW6lUvLSn1Q97gwbvktGoKGE2JAPIVkdmoEO9G+4j1U2l7BC32nOydcpIgAAA==",
+      "fecha": "2025-04-28",
+      "gps": [
+        29.081,
+        -13.476
+      ],
+      "tomada": "2025-04-28T11:32:50"
+    },
+    {
+      "archivo": "IMG_1357.JPEG",
+      "src": "/fotos/espana/lanzarote/img-1357.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoMABAAA4BaJZwC7AaXO8k0vCgAAP70d7LqsHV3hc5yVfJJA/LxPu8JManxL4oKGvFVf+NNcBkVAAAA",
+      "fecha": "2025-04-28",
+      "gps": [
+        29.157,
+        -13.431
+      ],
+      "tomada": "2025-04-28T12:07:18"
+    },
+    {
+      "archivo": "IMG_1358.JPEG",
+      "src": "/fotos/espana/lanzarote/img-1358.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoMABAAA4BaJbACdAD0POmkDiIAAP7u7r6B5FKDK1hV86EYLMtdtB5vg9iLdUt7f1egmZcqSUPVZPpKg7Q+KiyKWTuMzztjxmm9/41zyL03fcatMwP/BxRAAAA=",
+      "fecha": "2025-04-28",
+      "gps": [
+        29.157,
+        -13.432
+      ],
+      "tomada": "2025-04-28T12:20:55"
+    },
+    {
+      "archivo": "IMG_1538.JPEG",
+      "src": "/fotos/espana/lanzarote/img-1538.webp",
+      "ancho": 2048,
+      "alto": 1536,
+      "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAwAA4BaJQBOgCPQZtcpbmagAP7feK9QBXh+lbYhHc8iUHKB4jUNVbQDDahURjb7ZAknSI41UMGBpE6CaKHRWifcAA==",
+      "fecha": "2025-04-28",
+      "gps": [
+        29.212,
+        -13.484
+      ],
+      "tomada": "2025-04-28T15:45:28"
+    },
+    {
+      "archivo": "IMG_1668.JPEG",
+      "src": "/fotos/espana/lanzarote/img-1668.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoMABAAA4BaJagCdADhACAUdNYAAP4xXoVP7C2kh1CafDAT5P1l3xBMhSkOrvvKy8hHSO4gRnmvW6ylLld/6way3MFfALbmOw7DdRdetcpf246qMC/uAAAA",
+      "fecha": "2025-04-29",
+      "gps": [
+        28.843,
+        -13.788
+      ],
+      "tomada": "2025-04-29T13:14:26"
+    },
+    {
+      "archivo": "IMG_1671.JPEG",
+      "src": "/fotos/espana/lanzarote/img-1671.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoMABAAA4BaJZACdADbG8E6AAD3z1PhTxNlXrcLMJzTG1Q5HgsqHPzk6RPqBOtKRQT5C+PWD52rN1DOjB2OdPPwAAA=",
+      "fecha": "2025-04-29",
+      "gps": [
+        28.858,
+        -13.841
+      ],
+      "tomada": "2025-04-29T14:46:33"
+    },
+    {
+      "archivo": "IMG_9652.JPG",
+      "src": "/fotos/espana/lanzarote/img-9652.webp",
+      "ancho": 2400,
+      "alto": 1600,
+      "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAsAA4BaJQBOgCBUqA3dy/AAAN5lWbnpJznPcoVLmlqb/j+1GYXZtfF9k0EiW+wFJRQ2OmfYeRpobhQ8lygA",
+      "fecha": "2025-04-26",
+      "gps": null,
+      "tomada": "2025-04-26T13:06:45"
+    },
+    {
+      "archivo": "IMG_9899.JPG",
+      "src": "/fotos/espana/lanzarote/img-9899.webp",
+      "ancho": 2400,
+      "alto": 1600,
+      "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsAA4BaJZQAApOpE7UoUIAA/mba0RFvjx2m0OEvYDDPF3KgPJNj4qwuky5MDiA9SD7NWiXDvFp4uRbv1bY0G1BHUchYgqQngVDEO6EPM8T2ICjkAA==",
+      "fecha": "2025-04-27",
+      "gps": null,
+      "tomada": "2025-04-27T10:11:11"
+    },
+    {
+      "archivo": "IMG_9951.JPG",
+      "src": "/fotos/espana/lanzarote/img-9951.webp",
+      "ancho": 1600,
+      "alto": 2400,
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoLABAAA4BaJYgCdADZWeZyAAD978MqeWVHkKe9Q9vS62zvW81pdxVYXd6BprjESkOAAA==",
+      "fecha": "2025-04-27",
+      "gps": null,
+      "tomada": "2025-04-27T12:17:38"
+    }
+  ],
+  "espana/madrid": [
+    {
+      "archivo": "IMG_0024.JPG",
+      "src": "/fotos/espana/madrid/img-0024.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoMABAAA4BaJQBOgBhzXHYFd8AA+XgNemySR9ROkslrik+U+Sxoggc5TCYU2gPZpmMIGramwtF6JcE5NgMx/nE2/fBgy6gKRpqWGvZxshDV7V3Djz8JyE/pWI4gCiAA",
+      "fecha": "2026-06-14",
+      "gps": null,
+      "tomada": "2026-06-14T11:58:14"
+    },
+    {
+      "archivo": "IMG_0029.JPG",
+      "src": "/fotos/espana/madrid/img-0029.webp",
+      "ancho": 2048,
+      "alto": 1536,
+      "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoQAAwAA4BaJZgCdACVHFucAAD+u+JyW83CQ0WJWmlr1FEprL+muNkCDRuW2Zo9zdior3cBhATg+A4XxapjOSM/3orjN6RUu3GNUgvrvxOqINiEOaAAAA==",
+      "fecha": "2026-06-13",
+      "gps": null,
+      "tomada": "2026-06-13T18:57:07"
+    },
+    {
+      "archivo": "IMG_0032.JPG",
+      "src": "/fotos/espana/madrid/img-0032.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAQAgCdASoMABAAA4BaJbACdAECvHRr/umAAP6IlIbA2/AcgKT8z1ogBrSjSH0u+zgWn3Wka/6lY2kWeIiNYUQXfIaH9jWV2uCWz0km4S+vnIUEdFZTZbzgKN+kWQ3o83zlmindTHZfJMxX+Rz6QRkAHsAAAA==",
+      "fecha": "2026-06-13",
+      "gps": null,
+      "tomada": "2026-06-13T21:26:40"
+    },
+    {
+      "archivo": "IMG_0044.JPG",
+      "src": "/fotos/espana/madrid/img-0044.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoMABAAA4BaJbACdAEXZrRWVJAAAP5m3RHZva8yJ0eb+sAaOnIIZZO3Qi8+T17fl6o+e/FRGAgImCxlX0Vw2gAA",
+      "fecha": "2026-06-13",
+      "gps": null,
+      "tomada": "2026-06-13T20:06:55"
+    },
+    {
+      "archivo": "IMG_0049.JPG",
+      "src": "/fotos/espana/madrid/img-0049.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoMABAAA4BaJagCdAEZwQddkAAA/vPvSHTUJmaqdzeZILrtHTVCtXlbsnf9Wn2czpgya4xsGgU7Xy5Bvu6/zHg2IudHFHtQK73Kl0CEkZukSF7TqKAAAA==",
+      "fecha": "2026-06-13",
+      "gps": null,
+      "tomada": "2026-06-13T18:19:42"
+    },
+    {
+      "archivo": "IMG_0050.JPG",
+      "src": "/fotos/espana/madrid/img-0050.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoMABAAA4BaJYwCdAYvra4VqKeM/gAA/tKmJJHv3Nnfl9RiW2/1Mib6YzlfnxWXmHFruddEkYmL13gtuwq2f2fWAy4hwlIqt0ItaUhfjlWrSdROn0iUj1R57QFYsCY0AAA=",
+      "fecha": "2026-06-14",
+      "gps": null,
+      "tomada": "2026-06-14T13:09:24"
+    },
+    {
+      "archivo": "IMG_0270.JPG",
+      "src": "/fotos/espana/madrid/img-0270.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAABwAgCdASoMABAAA4BaJZACdAYt92ZLRgyq/YgAAP7uzUSJrp2Hf1IAcE+rb7cl++1hA2tFQ35ddqdJ0q8Noge1oGmRUvDCQ79mGoI9kjLJi+ZXVsDLc6qJ+xkY2tV4Ee7B+dOzm5Gd6RKBl0JhYAAA",
+      "fecha": "2026-06-14",
+      "gps": null,
+      "tomada": "2026-06-14T19:42:28"
+    },
+    {
+      "archivo": "IMG_0373.JPG",
+      "src": "/fotos/espana/madrid/img-0373.webp",
+      "ancho": 2048,
+      "alto": 1536,
+      "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAwAA4BaJbACdAEHTFNiWs5QAP7xeugOOrGBrWtZScmntdoQxVCiX/3n/eIcOfbPWoZijOFuic4nh0lx6uElzO1eNwnYa1K80wRauv/f3XBiVSRAAA==",
+      "fecha": "2026-06-14",
+      "gps": null,
+      "tomada": "2026-06-14T22:32:12"
+    },
+    {
+      "archivo": "IMG_1089.JPEG",
+      "src": "/fotos/espana/madrid/img-1089.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwAgCdASoMABAAA4BaJbACdADdteadTZJYAAD9w8xebne/LFmbLP5Itv0lLek48EzUMDJDoLgOegupLHnyEVJbGZ9TmZqlWW2w1AUhAKlFINHg/fdH9cnssOabgEgevYEVLb7/TILXSzgUBQVoFDb5WAAAAA==",
+      "fecha": "2026-06-13",
+      "gps": [
+        40.427,
+        -3.703
+      ],
+      "tomada": "2026-06-13T21:23:53"
+    },
+    {
+      "archivo": "IMG_1093.JPEG",
+      "src": "/fotos/espana/madrid/img-1093.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoMABAAA4BaJZgCdAEO+xlZ8SAA/vd8/MOe1gPPNVsbNT3mcnQQo8ioY6qhn695I+36kJFNKBq9w4a0gHS0RwAA",
+      "fecha": "2026-06-13",
+      "gps": [
+        40.42,
+        -3.706
+      ],
+      "tomada": "2026-06-13T22:18:22"
+    },
+    {
+      "archivo": "IMG_1104.JPEG",
+      "src": "/fotos/espana/madrid/img-1104.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwAgCdASoMABAAA4BaJbACdADhL+BhLz8sAAD9UuYSs02LGut15emUb3BALWNWsNqOQISb5zvYjRKHQY2SMgXm9QuqI+UK+rrXZWv4QsBDyk0WVId/aEwPidKnwW7RSd83ADn/lAAAAA==",
+      "fecha": "2026-06-14",
+      "gps": [
+        40.424,
+        -3.709
+      ],
+      "tomada": "2026-06-14T13:27:08"
+    },
+    {
+      "archivo": "IMG_1145.JPEG",
+      "src": "/fotos/espana/madrid/img-1145.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoMABAAA4BaJbACdAD0qR4xQAD+wouFAvslhXz4mmD0E2++kJPYhMBMqazYiEHISduN2MMPh+n94jbXTIPqofqIIHmt3TZqC7PS9NSGAAA=",
+      "fecha": "2026-06-14",
+      "gps": [
+        40.436,
+        -3.599
+      ],
+      "tomada": "2026-06-14T22:33:18"
+    },
+    {
+      "archivo": "IMG_1285.JPG",
+      "src": "/fotos/espana/madrid/img-1285.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoMABAAA4BaJYwC7AEPDGnXQKlwAAD+1z/M+U0HFQQgeIwqeys+5obPyTwuUFs31vQ+Jj7dmMLKIg0OWwiDphDiG0mguBn22R+HVLAuMf1vLuHvUYSoAA==",
+      "fecha": "2026-06-14",
+      "gps": null,
+      "tomada": "2026-06-14T19:29:18"
+    }
+  ],
+  "espana/nijar": [
     {
       "archivo": "provisional-01.jpg",
-      "src": "/fotos/espana/san-sebastian/provisional-01.webp",
+      "src": "/fotos/espana/nijar/provisional-01.webp",
       "ancho": 1200,
       "alto": 1500,
-      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoNABAAA4BaJQBOgCHf0CA8AAD+5wvIiqdffWfbktwKebxQXTXSIWkQQAAAAA==",
+      "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoNABAAA4BaJZwAAuZYnSgA/u0+8pymUf6S10IaX32vrHAAAAA=",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-02.jpg",
-      "src": "/fotos/espana/san-sebastian/provisional-02.webp",
+      "src": "/fotos/espana/nijar/provisional-02.webp",
       "ancho": 1500,
       "alto": 1000,
-      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQAAsAA4BaJQBOiP/wPQm6gAD+3q1e19YAX6poU0NtGDjk6FFqUT5uO0iMAA==",
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoQAAsAA4BaJZwAAucJ9uCAAP7qsBnwgZkP6+cbhACUAAAA",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-03.jpg",
-      "src": "/fotos/espana/san-sebastian/provisional-03.webp",
+      "src": "/fotos/espana/nijar/provisional-03.webp",
       "ancho": 1200,
       "alto": 1600,
-      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACQAQCdASoMABAAA4BaJQBOgCHUyAAA/ucRjeAP6UEqDoXrS91SBghpuKL6U0U62d5WdxGAAAA=",
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoMABAAA4BaJZwAAuWpNV8YAP7tPsyqQ6c16hDORLKFQAAA",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-04.jpg",
-      "src": "/fotos/espana/san-sebastian/provisional-04.webp",
+      "src": "/fotos/espana/nijar/provisional-04.webp",
       "ancho": 1200,
       "alto": 1200,
-      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACQAQCdASoQABAAA4BaJQBOgCHU6YAA/ucKj1M7hVHWoBvhX/54jPi9bYK3LU8O+Nj+IkQA",
+      "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoQABAAA4BaJZwAAuWnxigAAP7tPsj9odFfwyI493MzjvgAAAA=",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-05.jpg",
-      "src": "/fotos/espana/san-sebastian/provisional-05.webp",
+      "src": "/fotos/espana/nijar/provisional-05.webp",
       "ancho": 1000,
       "alto": 1500,
-      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoLABAAA4BaJQBOgCHZew8AAP7nCvTU39nkRNUdblQLaCvC7JRmG3GL4TLwAA==",
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoLABAAA4BaJZwAAuaIwgAA/u0+8maXlukZurrAQnWpAAAA",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-06.jpg",
-      "src": "/fotos/espana/san-sebastian/provisional-06.webp",
+      "src": "/fotos/espana/nijar/provisional-06.webp",
       "ancho": 1600,
       "alto": 1066,
-      "blur": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoQAAsAA4BaJQBOgCHcMs6AAP7nGa9qgXZp0PjFta1/nAINX8HxXwAA",
+      "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoQAAsAA4BaJZwAAubQOBp2gAD+7Xebutsv88LLErHdfa2AqAAAAA==",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-07.jpg",
-      "src": "/fotos/espana/san-sebastian/provisional-07.webp",
+      "src": "/fotos/espana/nijar/provisional-07.webp",
       "ancho": 1200,
       "alto": 1500,
-      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACQAQCdASoNABAAA4BaJQBOgCHPBYAA/ucSruXkg9zKEg7oSs4QFnA5G69kUrB5iDENzGMCdL3fmAAA",
+      "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoNABAAA4BaJZwAAuaNb8YAAP7tPvJmyCeP2Ib8cE9LZDgAAAA=",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
+    }
+  ],
+  "espana/pais-vasco": [
+    {
+      "archivo": "provisional-01.jpg",
+      "src": "/fotos/espana/pais-vasco/provisional-01.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoNABAAA4BaJZwAAuWrYPWMAAD+7T7JLj5aGnof7s9G3EwAAAA=",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-02.jpg",
+      "src": "/fotos/espana/pais-vasco/provisional-02.webp",
+      "ancho": 1500,
+      "alto": 1000,
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoQAAsAA4BaJZwAAuaBJtAA/u13MGMPS4NUIyIF5mmgAAAA",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-03.jpg",
+      "src": "/fotos/espana/pais-vasco/provisional-03.webp",
+      "ancho": 1200,
+      "alto": 1600,
+      "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoMABAAA4BaJZwAAuagL3zAAP7tPvJj+JT/WcuGMSrgG4VlgAA=",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-04.jpg",
+      "src": "/fotos/espana/pais-vasco/provisional-04.webp",
+      "ancho": 1200,
+      "alto": 1200,
+      "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoQABAAA4BaJZwAAuaK72QAAP7tPvJml5bpGV+LWDA2CzpU9EcAAA==",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-05.jpg",
+      "src": "/fotos/espana/pais-vasco/provisional-05.webp",
+      "ancho": 1000,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoLABAAA4BaJZwAAudX/IQAAP7tPdDXOS9ulbbtP8TYAA==",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-06.jpg",
+      "src": "/fotos/espana/pais-vasco/provisional-06.webp",
+      "ancho": 1600,
+      "alto": 1066,
+      "blur": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoQAAsAA4BaJZwAAuadBh4AAP7tdzBkV4aq6dasFAAAAA==",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-07.jpg",
+      "src": "/fotos/espana/pais-vasco/provisional-07.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoNABAAA4BaJZwAAuad22CRUAD+7T7yVsqqOP13bu4kFihgAAA=",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    }
+  ],
+  "espana/santiago": [
+    {
+      "archivo": "provisional-01.jpg",
+      "src": "/fotos/espana/santiago/provisional-01.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAADQAQCdASoNABAAA4BaJZwAAuagL9l80AD+7T7yZh7BkTaPZajRwAAA",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-02.jpg",
+      "src": "/fotos/espana/santiago/provisional-02.webp",
+      "ancho": 1500,
+      "alto": 1000,
+      "blur": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACQAQCdASoQAAsAA4BaJZwAAuaDGGgA/uqwGfJnQISnYmBeAAA=",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-03.jpg",
+      "src": "/fotos/espana/santiago/provisional-03.webp",
+      "ancho": 1200,
+      "alto": 1600,
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoMABAAA4BaJZwAAuagJsyAAP7tPvJejaSxPvZaITdeoAAA",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-04.jpg",
+      "src": "/fotos/espana/santiago/provisional-04.webp",
+      "ancho": 1200,
+      "alto": 1200,
+      "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoQABAAA4BaJZwAAuaQML4AAP7tPvJmE+E0jeTKog2OMpGAAAA=",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-05.jpg",
+      "src": "/fotos/espana/santiago/provisional-05.webp",
+      "ancho": 1000,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoLABAAA4BaJZwAAudasDfgAP7tPc3V2pa4TQDXEQh0QgAA",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-06.jpg",
+      "src": "/fotos/espana/santiago/provisional-06.webp",
+      "ancho": 1600,
+      "alto": 1066,
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAADQAQCdASoQAAsAA4BaJZwAAuatDjNUAAD+6rAj268WbPKtfRyqAbAA",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-07.jpg",
+      "src": "/fotos/espana/santiago/provisional-07.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoNABAAA4BaJZwAAuagL9B+KAD+7T7yY/iVE1ZypHgWo4BQTCwAAA==",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    }
+  ],
+  "espana/segovia": [
+    {
+      "archivo": "provisional-01.jpg",
+      "src": "/fotos/espana/segovia/provisional-01.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoNABAAA4BaJZwAAuagL3zAAP7tPvJjvM2rZNunA3Z4AAAA",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-02.jpg",
+      "src": "/fotos/espana/segovia/provisional-02.webp",
+      "ancho": 1500,
+      "alto": 1000,
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoQAAsAA4BaJZwAAuatw5cAAP7td5u62zvwT6GRzdL7EwAA",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-03.jpg",
+      "src": "/fotos/espana/segovia/provisional-03.webp",
+      "ancho": 1200,
+      "alto": 1600,
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoMABAAA4BaJZwAAuad1FXgAP7tPvJYMwXkfx4awAsLuQAA",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-04.jpg",
+      "src": "/fotos/espana/segovia/provisional-04.webp",
+      "ancho": 1200,
+      "alto": 1200,
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoQABAAA4BaJZwAAuaMNToAAP7tPvJmyCY5nqJnkBQawAAA",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-05.jpg",
+      "src": "/fotos/espana/segovia/provisional-05.webp",
+      "ancho": 1000,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoLABAAA4BaJZwAAuagNAFtAAD+7T7yZWdGQ8dW3m5iRAPAgAA=",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-06.jpg",
+      "src": "/fotos/espana/segovia/provisional-06.webp",
+      "ancho": 1600,
+      "alto": 1066,
+      "blur": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoQAAsAA4BaJZwAAuaagf1QAP7td5u7LO2OGHZiSbgAAA==",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-07.jpg",
+      "src": "/fotos/espana/segovia/provisional-07.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoNABAAA4BaJZwAAudYptNAAP7tPdEFx155iAEW+vyAYXsAAAA=",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    }
+  ],
+  "espana/sevilla": [
+    {
+      "archivo": "IMG_3980.JPEG",
+      "src": "/fotos/espana/sevilla/img-3980.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoMABAAA4BaJbACdAC3W9BMAADuSd/al9HpYfeT4HySp8qPRfFnLp39V/dRq8SKv6KWLjnLf+Yl7wp5Ejr0fEtYL3w06E2FXicycAAA",
+      "fecha": "2025-06-26",
+      "gps": [
+        37.393,
+        -5.992
+      ],
+      "tomada": "2025-06-26T12:17:14"
+    },
+    {
+      "archivo": "IMG_3985.JPEG",
+      "src": "/fotos/espana/sevilla/img-3985.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoMABAAA4BaJbACdACmA7Z+TK6AAP6whhZUuI6AkARg+Wuy0rnSxIjt8o96Do7XG/1dysPpv1/4r1Y0aaAAAA==",
+      "fecha": "2025-06-26",
+      "gps": [
+        37.386,
+        -5.992
+      ],
+      "tomada": "2025-06-26T14:13:06"
+    },
+    {
+      "archivo": "IMG_4036.JPEG",
+      "src": "/fotos/espana/sevilla/img-4036.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoMABAAA4BaJbACdADbYXLyxcAA+/0efdEw4HQENssCABN7rpvQuEreECqaBePz5Fy7v37FQmXuamGUN3jPCVnoDllxkArjEV+BnpeV+bqlwAAA",
+      "fecha": "2025-06-27",
+      "gps": [
+        37.384,
+        -5.992
+      ],
+      "tomada": "2025-06-27T09:37:50"
+    },
+    {
+      "archivo": "IMG_4110.JPEG",
+      "src": "/fotos/espana/sevilla/img-4110.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoMABAAA4BaJbACdADZs1PKmAAA96/kz3g674BBk5P3nU/pmTzzbpaChCpF9Bf8oQJKbcR6cr4azC/O6noQCNRTDFgWWUV7Z3DxaZC6cSwYr9D0z9mQAA==",
+      "fecha": "2025-06-27",
+      "gps": [
+        37.383,
+        -5.99
+      ],
+      "tomada": "2025-06-27T10:01:48"
+    },
+    {
+      "archivo": "IMG_4205.JPEG",
+      "src": "/fotos/espana/sevilla/img-4205.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoMABAAA4BaJbACdADzg0DspAYAAN1XZj624+c4a0gBNLZiVzyDuQL5vv0xlwrBPlv5pcesofPHhIf32pXnvf/H879tlvsiXEDC+eynVvbbAAAA",
+      "fecha": "2025-06-27",
+      "gps": [
+        37.383,
+        -5.99
+      ],
+      "tomada": "2025-06-27T10:07:36"
+    },
+    {
+      "archivo": "IMG_4214.JPEG",
+      "src": "/fotos/espana/sevilla/img-4214.webp",
+      "ancho": 2048,
+      "alto": 1536,
+      "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAwAA4BaJQBOgB7HzGJ0YVYAAP7VC14S/AJTXlap9q+7szJ12V09qWRwF1WA1rFH0v1KqXLM8IIt4VxOI8ebsg6aM1nZDXPVUNlyshGwAA==",
+      "fecha": "2025-06-27",
+      "gps": [
+        37.385,
+        -5.993
+      ],
+      "tomada": "2025-06-27T12:44:20"
+    },
+    {
+      "archivo": "IMG_4216.JPEG",
+      "src": "/fotos/espana/sevilla/img-4216.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAABwAgCdASoMABAAA4BaJZACdIExgnSymWSXdjwgAPRX7sTYBNt02uRWfngMLuAdjyOxTAoAcREJ5av5qoCQ/CGBiqABU00xNa9OXdqyLYv95jnlw0T4FkAS/c+cMcYGP4maw6Pyk2u9BwFLgBKQkAAA",
+      "fecha": "2025-06-27",
+      "gps": [
+        37.385,
+        -5.993
+      ],
+      "tomada": "2025-06-27T12:44:26"
+    },
+    {
+      "archivo": "IMG_4221.JPEG",
+      "src": "/fotos/espana/sevilla/img-4221.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoMABAAA4BaJQBOgB5O0a07MAD+pXO4KVFx5xEBx2b9eOtMEmoFTu74sRUaY0+trGn0CY2twHkt3f80rtrr8SHEp7dChSLuf98xxs82YJZpAAAA",
+      "fecha": "2025-06-27",
+      "gps": [
+        37.386,
+        -5.993
+      ],
+      "tomada": "2025-06-27T12:58:57"
+    },
+    {
+      "archivo": "IMG_4228.JPEG",
+      "src": "/fotos/espana/sevilla/img-4228.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoMABAAA4BaJbACdAC2FNMvdAAA/puC4xHYzCgW/A7MuNS6DlqamDO9NLMRg2o0qyat4qb1wt6dEa0JS+Bxumn+jf0j2sxB6KXAsugAAAA=",
+      "fecha": "2025-06-27",
+      "gps": [
+        37.386,
+        -5.993
+      ],
+      "tomada": "2025-06-27T13:09:11"
+    },
+    {
+      "archivo": "IMG_4231.JPEG",
+      "src": "/fotos/espana/sevilla/img-4231.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoMABAAA4BaJQBOgCHh44nYTl0AAP74ehPEhs2IUu/n1vieSHn9WNg4ewoZF+MYyl4ChESo7NPrYpyUkunyCEjLpMatbXpNvKKkAAAA",
+      "fecha": "2025-06-27",
+      "gps": [
+        37.386,
+        -5.991
+      ],
+      "tomada": "2025-06-27T22:44:56"
+    },
+    {
+      "archivo": "IMG_4658.JPEG",
+      "src": "/fotos/espana/sevilla/img-4658.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoMABAAA4BaJQBdgMXc3FZwcnyPqIAAzh98x58Wq4v3i3ENl7LcpiE4XtI+12mOfuHQz1jTCOEUwE9XqJO1hshrQVfeHik6zGTAiJKvEUAexc3qKJ/WMgMAAAA=",
+      "fecha": "2025-06-27",
+      "gps": null,
+      "tomada": "2025-06-27T19:36:46"
+    }
+  ],
+  "espana/toledo": [
+    {
+      "archivo": "provisional-01.jpg",
+      "src": "/fotos/espana/toledo/provisional-01.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoNABAAA4BaJZwAAuWm9yAA/u0+yngwICM3KoZ/hdYAAA==",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-02.jpg",
+      "src": "/fotos/espana/toledo/provisional-02.webp",
+      "ancho": 1500,
+      "alto": 1000,
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoQAAsAA4BaJZwAAuauEceAAP7qsGp/qISvsGpaaOZ6QAAA",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-03.jpg",
+      "src": "/fotos/espana/toledo/provisional-03.webp",
+      "ancho": 1200,
+      "alto": 1600,
+      "blur": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoMABAAA4BaJZwAAuaQVzfAAP7tPvJmy7QfzV0sPcqAAA==",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-04.jpg",
+      "src": "/fotos/espana/toledo/provisional-04.webp",
+      "ancho": 1200,
+      "alto": 1200,
+      "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoQABAAA4BaJZwAAuaLb54AAP7tPvJmE6vFaVcPK0jBdvcMAAA=",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-05.jpg",
+      "src": "/fotos/espana/toledo/provisional-05.webp",
+      "ancho": 1000,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoLABAAA4BaJZwAAuad9KwAAP7tPvJYIR86I/RrHo5JNM0AAAA=",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-06.jpg",
+      "src": "/fotos/espana/toledo/provisional-06.webp",
+      "ancho": 1600,
+      "alto": 1066,
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoQAAsAA4BaJZwAAuZvHJG4AP7qsBnyZ0U9H+/GviCMYAAA",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-07.jpg",
+      "src": "/fotos/espana/toledo/provisional-07.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoNABAAA4BaJZwAAuaVZcrQAP7tPvJms2jD+eQG3re7XAAA",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    }
+  ],
+  "espana/val-d-aran": [
+    {
+      "archivo": "provisional-01.jpg",
+      "src": "/fotos/espana/val-d-aran/provisional-01.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoNABAAA4BaJZwAAuWrYPWMAAD+7T7JLj5aGnof7s9G3EwAAAA=",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-02.jpg",
+      "src": "/fotos/espana/val-d-aran/provisional-02.webp",
+      "ancho": 1500,
+      "alto": 1000,
+      "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoQAAsAA4BaJZwAAuaBJtAA/u13MGMPS4NUIyIF5mmgAAAA",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-03.jpg",
+      "src": "/fotos/espana/val-d-aran/provisional-03.webp",
+      "ancho": 1200,
+      "alto": 1600,
+      "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoMABAAA4BaJZwAAuagL3zAAP7tPvJj+JT/WcuGMSrgG4VlgAA=",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-04.jpg",
+      "src": "/fotos/espana/val-d-aran/provisional-04.webp",
+      "ancho": 1200,
+      "alto": 1200,
+      "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoQABAAA4BaJZwAAuaK72QAAP7tPvJml5bpGV+LWDA2CzpU9EcAAA==",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-05.jpg",
+      "src": "/fotos/espana/val-d-aran/provisional-05.webp",
+      "ancho": 1000,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoLABAAA4BaJZwAAudX/IQAAP7tPdDXOS9ulbbtP8TYAA==",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-06.jpg",
+      "src": "/fotos/espana/val-d-aran/provisional-06.webp",
+      "ancho": 1600,
+      "alto": 1066,
+      "blur": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoQAAsAA4BaJZwAAuadBh4AAP7tdzBkV4aq6dasFAAAAA==",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
+    },
+    {
+      "archivo": "provisional-07.jpg",
+      "src": "/fotos/espana/val-d-aran/provisional-07.webp",
+      "ancho": 1200,
+      "alto": 1500,
+      "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoNABAAA4BaJZwAAuad22CRUAD+7T7yVsqqOP13bu4kFihgAAA=",
+      "fecha": null,
+      "gps": null,
+      "tomada": null
     }
   ],
   "italia/roma": [
@@ -137,7 +1303,8 @@
       "alto": 1500,
       "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoNABAAA4BaJZgCdAEOIk/IEAD+6rBh9r+TyUdaxdEXCI0b3ri5oid6qstRFLzSIo4AAA==",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-02.jpg",
@@ -146,7 +1313,8 @@
       "alto": 1000,
       "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoQAAsAA4BaJZACdAEOvBv2BAAA/uqwc3uaShUKyooWFS1euLlhY1Zb3m0AAA==",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-03.jpg",
@@ -155,7 +1323,8 @@
       "alto": 1600,
       "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoMABAAA4BaJZgCdAEO/Cex9rSAAP7qrY/R7lgBnr9+suI64uaIb5s7Vr1vdPzAAAA=",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-04.jpg",
@@ -164,7 +1333,8 @@
       "alto": 1200,
       "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQABAAA4BaJZgCdAEO+9nC9AD+6q2P0e5YCuvaGaDEbQUc2P5Zm8h55YElY/TUh+AAAA==",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-05.jpg",
@@ -173,7 +1343,8 @@
       "alto": 1500,
       "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoLABAAA4BaJZgCdAEOIkW54AAA/uqwYXPz+DL8jqbBCR1xc0Q1WrLT8qwl8AAA",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-06.jpg",
@@ -182,7 +1353,8 @@
       "alto": 1066,
       "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoQAAsAA4BaJZACdAEOwCQAAP7qsGp+PYyRpIHZ81eiP65fLObnaO9LkRFhAAAA",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
     },
     {
       "archivo": "provisional-07.jpg",
@@ -191,7 +1363,401 @@
       "alto": 1500,
       "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoNABAAA4BaJZgCdAEO++mIAP7qrQS73hB1JpSj2IIrsfAGGbX1xc0RO9VWWoil5nAAAA==",
       "fecha": null,
-      "gps": null
+      "gps": null,
+      "tomada": null
+    }
+  ],
+  "polonia/cracovia": [
+    {
+      "archivo": "IMG_2271.JPEG",
+      "src": "/fotos/polonia/cracovia/img-2271.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoMABAAA4BaJZQCdAYuluElc1xCAAD+6oc5lke/XJRi7oL7leCxay9U+AGZ9SisWdNqCoZCKfepjDQ/KVuuw/EBDV4Z3dhBngL5wuArG3P1M/yn8AA=",
+      "fecha": "2026-01-03",
+      "gps": null,
+      "tomada": "2026-01-03T09:51:14"
+    },
+    {
+      "archivo": "IMG_2334.JPEG",
+      "src": "/fotos/polonia/cracovia/img-2334.webp",
+      "ancho": 2048,
+      "alto": 1536,
+      "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwAgCdASoQAAwAA4BaJYgCdAYrnUZQkijTwAD2pNNAN9es3pfax1cqioZ7dd2eR+HKd8DfuzxSyMGSt8eVThT7e7qaF2kmY+AH6ttNwnQ35eQMU9sp1rR1aEQnmQanaZf/rAFhq6mIAA==",
+      "fecha": "2026-01-05",
+      "gps": null,
+      "tomada": "2026-01-05T08:56:15"
+    },
+    {
+      "archivo": "IMG_7050.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7050.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoMABAAA4BaJZQCdAEOvIWimAAA/uraR5rhkk+O6ip3v8usZ/cQ9lncNQQyAPhBDOnT2rPpuo3KifwSfrtM+gyki0MeCmfAAAA=",
+      "fecha": "2026-01-01",
+      "gps": [
+        50.064,
+        19.942
+      ],
+      "tomada": "2026-01-01T13:01:49"
+    },
+    {
+      "archivo": "IMG_7052.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7052.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoMABAAA4BaJbACdH8AE7TN23zoaAD+3t/l+dO2ZL4AbtfLxJ8j5fN1B8E+UQWLzVuhMuXWG4Fv6LiIhZwV3j9mvo0c0jPD3fok/xh02wTEVGcZVCwAAA==",
+      "fecha": "2026-01-01",
+      "gps": [
+        50.062,
+        19.938
+      ],
+      "tomada": "2026-01-01T13:14:33"
+    },
+    {
+      "archivo": "IMG_7055.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7055.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoMABAAA4BaJaACdAEf5oD0Ek0agADiZrqRppGu/m58EXtKZlvTMsFCZeWs4oixipOeWtqnXOb6S1vADec04NAvbp36fz3fCB6nRtqNi0b0JTCOgd1S/Qrn4nnrOv2Y0RfR4AAA",
+      "fecha": "2026-01-01",
+      "gps": [
+        50.062,
+        19.937
+      ],
+      "tomada": "2026-01-01T13:44:30"
+    },
+    {
+      "archivo": "IMG_7060.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7060.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoMABAAA4BaJQBOgCHZhk5VokAA/ufp0n9MRw7pGqsXijH0g7Abss4n1ah7piN1e8EPp0RX/byzG4VgsPRYoAec8k25j/4bNQAAAA==",
+      "fecha": "2026-01-01",
+      "gps": [
+        50.062,
+        19.937
+      ],
+      "tomada": "2026-01-01T13:59:52"
+    },
+    {
+      "archivo": "IMG_7081.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7081.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoMABAAA4BaJYwCdICXGX9kUPn37cAA/mwCxu0o+/HQMU5dfaXxGMtgSNHzL/7h85VcUku31nuLg9AkEUAPjEJOvfur+XKMA5Mqk6U/c3wzo6pup6NvAudkKcBFS9SWAAA=",
+      "fecha": "2026-01-01",
+      "gps": [
+        50.062,
+        19.938
+      ],
+      "tomada": "2026-01-01T14:18:57"
+    },
+    {
+      "archivo": "IMG_7101.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7101.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoMABAAA4BaJQBOgMYJtV8fgAAA/uo6i/ayxM905FYnV9kVbXMBfkud/OinHKIH1S1rpaAw8XfwDmhwD60JcCiUOl9Ts4wcB67Vywc+/uEucY+AI5wAAA==",
+      "fecha": "2026-01-01",
+      "gps": [
+        50.065,
+        19.941
+      ],
+      "tomada": "2026-01-01T14:28:03"
+    },
+    {
+      "archivo": "IMG_7130.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7130.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoMABAAA4BaJYwCdAEQzZGgMAAA/sqd+fxQrUV96R2wXHlV+btB6xyRq4L867FIE/VNywIMH2GKexhYLjLliAAA",
+      "fecha": "2026-01-01",
+      "gps": [
+        50.065,
+        19.941
+      ],
+      "tomada": "2026-01-01T14:32:13"
+    },
+    {
+      "archivo": "IMG_7169.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7169.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoMABAAA4BaJQBOgCHPeoW0RgAA/vkW5mcWsV5sThzf4ZtrB3akMsTjR0LQZFy+KWx5KB+yAJ2OPR+xBkk+W7gkyrjf0tUqAAA=",
+      "fecha": "2026-01-01",
+      "gps": [
+        50.062,
+        19.938
+      ],
+      "tomada": "2026-01-01T18:36:08"
+    },
+    {
+      "archivo": "IMG_7179.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7179.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQAgCdASoMABAAA4BaJbACdACR870wSooAAPuf9+zVstHyj8FBdVx9dfa3sJzVt1RuReJyOW3FktBezfh3xtSFMsMG0LTIK7Z1V2WHie1nEH9Xc/b7C5MznG5W50wCDyr66gHJkvjqAAAA",
+      "fecha": "2026-01-01",
+      "gps": [
+        50.064,
+        19.932
+      ],
+      "tomada": "2026-01-01T19:25:35"
+    },
+    {
+      "archivo": "IMG_7194.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7194.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoMABAAA4BaJYgCdAEWTNV0IAAA/mtUi147hRifukFuME5IjTQaqIoYSS23uqsfcG9FcrNy1UpI1iLhaZq6PEC/kq75s9iZaOJLLoaRxcpfFw6NvEexQXn/eiAAAA==",
+      "fecha": "2026-01-02",
+      "gps": [
+        50.068,
+        19.948
+      ],
+      "tomada": "2026-01-02T07:55:20"
+    },
+    {
+      "archivo": "IMG_7195.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7195.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoMABAAA4BaJagCdAEOz2n+kAD+qgW7J2Q1PHmzw26SvxpKExvNUj04se/2yql5VrdCqQUgqxBmOFF7K0a2GU9dD9m4SsI0f5y0dxuGk61h5A2mzTwAAA==",
+      "fecha": "2026-01-02",
+      "gps": [
+        50.068,
+        19.948
+      ],
+      "tomada": "2026-01-02T07:56:57"
+    },
+    {
+      "archivo": "IMG_7200.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7200.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAQCdASoMABAAA4BaJbACdH8AE1mYTAD97X1QkPjFwmf/q0vL8MZPXY4a6ACIJ2j8tjo0RVjs0rI+MN0quctIzpV3W/ahLKYju3zlr/ktwWtKFMj8toHwTBQ8uE/AAAA=",
+      "fecha": "2026-01-02",
+      "gps": [
+        50.261,
+        19.014
+      ],
+      "tomada": "2026-01-02T09:52:11"
+    },
+    {
+      "archivo": "IMG_7279.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7279.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoMABAAA4BaJQBOj+ADFrhQU7FoAP7WopxWcwsTlGe5J/tOsb8/4OQu28bdGHljp2HEx+yFOt0QfW7ZWRJIVs515+WQ2ZlQAAA=",
+      "fecha": "2026-01-02",
+      "gps": [
+        50.243,
+        19.083
+      ],
+      "tomada": "2026-01-02T12:08:05"
+    },
+    {
+      "archivo": "IMG_7283.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7283.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABQAgCdASoMABAAA4BaJQBOj+ACuJ+vxSLjj7AA/D28UuXl0IqFn0e5ZCDhs4SIWIyTHWXiZYisstyDivuqmFz+9bxOgd9TosHP5SfNTfZ+WJGAAAA=",
+      "fecha": "2026-01-02",
+      "gps": [
+        50.241,
+        19.081
+      ],
+      "tomada": "2026-01-02T12:19:07"
+    },
+    {
+      "archivo": "IMG_7292.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7292.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADQAQCdASoMABAAA4BaJbACdADZLLpJaAD+rcElNaWwlmX+cE8G3jl2O+K/kiLX35Ab3AzieXFcxCfclH1J8TetPhjvlZNEUH/9LqxLq6d7ftgC/80b46OxBrttbsWP/YChtDHPBgAHEAAA",
+      "fecha": "2026-01-02",
+      "gps": [
+        50.254,
+        19.021
+      ],
+      "tomada": "2026-01-02T13:52:54"
+    },
+    {
+      "archivo": "IMG_7357.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7357.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoMABAAA4BaJZgCdACzx7QyAADNxm7mcDG6fu9kshG4ZQsRKyw1Aml01GizP4HR8j+g2dCEl+cnkXwAftCGQfBr1Kc5C0YWFvVfAAAA",
+      "fecha": "2026-01-03",
+      "gps": [
+        50.027,
+        19.203
+      ],
+      "tomada": "2026-01-03T08:00:24"
+    },
+    {
+      "archivo": "IMG_7364.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7364.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoMABAAA4BaJbACdADhXF6mAAD83+hkVSpRGYgnJCYrs7J+2C3PXrfLZmp95t3mHpNfD4aqb0lflkVcFFXgxnFHWtqF/lOMkdqtSvKaGpw1AAAA",
+      "fecha": "2026-01-03",
+      "gps": [
+        50.027,
+        19.204
+      ],
+      "tomada": "2026-01-03T08:02:49"
+    },
+    {
+      "archivo": "IMG_7374.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7374.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoMABAAA4BaJZQCdAEPDyGdl8AA/u1Qe1Yx+R9wee+05kfKbDmD47cvI9JckSz+X2aWiICI/lQH9g8ytaAAAA==",
+      "fecha": "2026-01-03",
+      "gps": [
+        50.025,
+        19.204
+      ],
+      "tomada": "2026-01-03T09:25:40"
+    },
+    {
+      "archivo": "IMG_7380.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7380.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoMABAAA4BaJQBOj+AC+QaAE3kyAAD+7/EP/rqtIFLlsMt+yG8YRKOtCVC17AnQF524vmG/J+kZk1gZNYLLrmyj7S5JoND82lbaAJrwAAA=",
+      "fecha": "2026-01-03",
+      "gps": [
+        50.026,
+        19.203
+      ],
+      "tomada": "2026-01-03T09:28:43"
+    },
+    {
+      "archivo": "IMG_7385.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7385.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoMABAAA4BaJQBOgB6JrrYdG6AAAP7oh2yLQrSVN5XLHUCYHb9qmbOwmj7ri/HyL/YeEY8yHh8zzMOHlXmL0dMGhvTQg9jVYAA=",
+      "fecha": "2026-01-03",
+      "gps": [
+        50.028,
+        19.205
+      ],
+      "tomada": "2026-01-03T09:33:03"
+    },
+    {
+      "archivo": "IMG_7432.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7432.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoMABAAA4BaJbACdAEOtyoVK6AA/s1toFxvBOoqf7FYHEBDN7YuDZgCU8aOarkjobxgavv8EG5KKGZ87x9QheoIL3+SXqXJtOIEf/Qruuj+wAAA",
+      "fecha": "2026-01-03",
+      "gps": [
+        50.035,
+        19.182
+      ],
+      "tomada": "2026-01-03T11:00:51"
+    },
+    {
+      "archivo": "IMG_7444.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7444.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwAgCdASoMABAAA4BaJbACdAYu5k0qV03VYCiAAP7b5/paWJfnks/WzqY7ba0dyZSjRwHBjv9u/JuB4oT/PlU4afc7/8sCAD7/GJRj8HJskyXRVGlV2v609P8itnTDR2+vgIa9W2v8PyKSAAA=",
+      "fecha": "2026-01-03",
+      "gps": [
+        50.064,
+        19.932
+      ],
+      "tomada": "2026-01-03T13:50:16"
+    },
+    {
+      "archivo": "IMG_7473.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7473.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoMABAAA4BaJYwCdAD8LQroR5wAAP6Iogc7Tz9ksvQO1YPOrx58SPd2Be8xYav7ckEjzCXag1AyCHJK3p45jOOMGQQw9DbIkDLXERwu/0GMqQlH9O2rqU6EAAA=",
+      "fecha": "2026-01-04",
+      "gps": [
+        50.051,
+        19.944
+      ],
+      "tomada": "2026-01-04T11:00:14"
+    },
+    {
+      "archivo": "IMG_7485.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7485.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoMABAAA4BaJZgCdADcpyOrQOGAAM47mVdtW6Vz6d/Pau2UYd/qulx+uqYNhMwqibwP9hVL+wMEnbMx05ZyzrU/0d+/2M+niQ0hYIyijwEU3jQtwLfgSdJs3764AA==",
+      "fecha": "2026-01-04",
+      "gps": [
+        50.068,
+        19.95
+      ],
+      "tomada": "2026-01-04T13:11:09"
+    },
+    {
+      "archivo": "IMG_7505.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7505.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoMABAAA4BaJZwAAudpotSluAAA/vkT6aoB5Bi7VEUj6l31wQx+m58DHeD8dgVbe9mE4khAAAA=",
+      "fecha": "2026-01-04",
+      "gps": null,
+      "tomada": "2026-01-04T16:18:38"
+    },
+    {
+      "archivo": "IMG_7509.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7509.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoMABAAA4BaJZQCdAEPCmsyZXZAAP7zH1k0q9eYQFOWgNAUpGVDrIRzz2dGMnYYB7cvFX7zQg3uMAAA",
+      "fecha": "2026-01-04",
+      "gps": null,
+      "tomada": "2026-01-04T16:35:49"
+    },
+    {
+      "archivo": "IMG_7562.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7562.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoMABAAA4BaJbACdADdcHLHtw4AAP659SFzRZbBaOgOs8nN4EahEOBKbmJfZiGHIomwY4FuIlW5IzJOGwPXttYBM4dpCdSPQrx83dLA9LpuogAA",
+      "fecha": "2026-01-05",
+      "gps": [
+        50.054,
+        19.935
+      ],
+      "tomada": "2026-01-05T09:52:43"
+    },
+    {
+      "archivo": "IMG_7595.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7595.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACQAgCdASoMABAAA4BaJaACdEf/gcQzRXBjfvBUAAD+lyFRUqa3mE7yt8rjUNUfOSXUG2El8Q86MvQX8hRiT9vhQDdBOvC1LNGo6Dqaj5/yCGOUMr2U6Cmu4Wc1/sAA",
+      "fecha": "2026-01-05",
+      "gps": [
+        50.053,
+        19.934
+      ],
+      "tomada": "2026-01-05T10:08:12"
+    },
+    {
+      "archivo": "IMG_7674.JPEG",
+      "src": "/fotos/polonia/cracovia/img-7674.webp",
+      "ancho": 1536,
+      "alto": 2048,
+      "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAwAgCdASoMABAAA4BaJbACdAYt9wK+752vAAD+0qWD4kpd+xGJvtbvw4kn9orwD6ohcmW2AQD3x19It32wi6GhtYZYCWvWnihqusf0gB8Kcueq8ZHmvHxMsoSTZK8l0QLiDL43p/u/IpJEMg2dy7fe70cZgAAA",
+      "fecha": "2026-01-05",
+      "gps": [
+        50.064,
+        19.932
+      ],
+      "tomada": "2026-01-05T13:15:38"
     }
   ]
 }

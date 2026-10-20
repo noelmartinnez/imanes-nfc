@@ -1,6 +1,6 @@
 // Procesa las fotos originales que hay en content/<pais>/<lugar>/ y genera:
 //   - public/fotos/<pais>/<lugar>/<nombre>.webp  (lado mayor ≤ 2400 px, sin metadatos)
-//   - content/fotos.generated.json               (tamaño, desenfoque y fecha de cada foto)
+//   - content/fotos.generated.json               (tamaño, desenfoque, fecha y hora de cada foto)
 //
 // Uso: npm run fotos
 // Las fotos ya procesadas se saltan; las que borres de content/ se borran de public/.
@@ -40,16 +40,24 @@ async function subcarpetas(dir) {
   return entradas.filter((e) => e.isDirectory()).map((e) => e.name).sort(ordenNatural);
 }
 
-function fechaExif(metadatos) {
+/** Cuándo se hizo la foto, "AAAA-MM-DDTHH:MM:SS" en la hora local de la cámara, o null.
+ *  Sirve para ordenar las fotos de un viaje; la EXIF no lleva zona horaria. */
+function fechaHoraExif(metadatos) {
   if (!metadatos.exif) return null;
   try {
     const fecha = exifReader(metadatos.exif).Photo?.DateTimeOriginal;
     return fecha instanceof Date && !Number.isNaN(fecha.getTime())
-      ? fecha.toISOString().slice(0, 10)
+      ? fecha.toISOString().slice(0, 19)
       : null;
   } catch {
     return null;
   }
+}
+
+/** Lo que se guarda de la EXIF en el manifiesto (las fotos publicadas no la llevan). */
+function datosExif(metadatos) {
+  const tomada = fechaHoraExif(metadatos);
+  return { fecha: tomada?.slice(0, 10) ?? null, tomada, gps: gpsExif(metadatos) };
 }
 
 /** Grados, minutos y segundos de la EXIF a grados decimales (3 decimales ≈ 100 m). */
@@ -92,8 +100,7 @@ async function procesarFoto(origen, destino) {
     ancho: info.width,
     alto: info.height,
     blur: `data:image/webp;base64,${miniatura.toString("base64")}`,
-    fecha: fechaExif(metadatos),
-    gps: gpsExif(metadatos),
+    ...datosExif(metadatos),
   };
 }
 
@@ -139,12 +146,17 @@ async function main() {
         const previa = previas.get(archivo);
         const alDia =
           previa?.src === src &&
-          "gps" in previa &&
           existsSync(destino) &&
           (await stat(destino)).mtimeMs >= (await stat(origen)).mtimeMs;
 
-        if (alDia) {
+        if (alDia && "gps" in previa && "tomada" in previa) {
           manifiesto[clave].push(previa);
+          continue;
+        }
+        if (alDia) {
+          // El WebP está bien; solo faltan datos nuevos de la EXIF: no hace falta recodificarlo.
+          const metadatos = await sharp(await readFile(origen)).metadata();
+          manifiesto[clave].push({ ...previa, ...datosExif(metadatos) });
           continue;
         }
         try {

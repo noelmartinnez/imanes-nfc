@@ -48,6 +48,10 @@ Pegatina  →  https://<dominio>/m/donosti        (no cambia nunca)
 metadatos (incluida la ubicación GPS) y la guarda en `public/fotos/`. Solo se suben a Git
 esas versiones; los originales de `content/` se quedan en tu ordenador.
 
+Las fotos de cada lugar se muestran en el orden en que se hicieron (la fecha y hora que guarda la
+cámara), y la portada es la primera salvo que elijas otra con `"portada"`. Las que no tienen esa
+información (capturas, fotos reenviadas por WhatsApp) van al final, por nombre.
+
 > Fotos del iPhone: si están en HEIC, expórtalas como JPG
 > (Ajustes → Cámara → Formatos → "Más compatible").
 

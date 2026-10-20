@@ -24,7 +24,6 @@ const FORMATOS = [
 
 // Cielo, horizonte, tierra y primer plano: tonos aproximados de cada lugar.
 const PALETAS = {
-  "espana/san-sebastian": ["#a9c6d6", "#e6dccb", "#3f6f8f", "#5b7a5a"],
   "italia/roma": ["#ecd2ad", "#c98a55", "#9c4f36", "#5e4a3a"],
   "bulgaria/sofia": ["#cdd8da", "#7d8f94", "#4f6b4b", "#c9a24a"],
 };
